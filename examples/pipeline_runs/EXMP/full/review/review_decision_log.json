@@ -1,0 +1,22 @@
+{
+  "decision_log_id": "decision-log-exmp-05a7dc26d188",
+  "created_at": "2026-06-29T09:22:19+00:00",
+  "source_decision_file": "goodluck-stock-research/examples/xbrl_review_workbenches/EXMP/review_decision_template.json",
+  "quality_score_file": "goodluck-stock-research/examples/xbrl_review_quality/EXMP/review_quality_score.json",
+  "quality_score_reference": "review-quality-exmp-05a7dc26d188",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/EXMP/extraction_candidates.json",
+  "manifest_file": "goodluck-stock-research/examples/xbrl_extraction_runs/EXMP/extraction_run_manifest.json",
+  "review_batch_id": "normalized-review-exmp-05a7dc26d188",
+  "extraction_run_id": "xbrl-exmp-fy2025-05a7dc26d188",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "ticker": "EXMP",
+  "decision_counts": {
+    "approve": 5,
+    "reject": 1,
+    "adjust": 1,
+    "unresolved": 1,
+    "needs_more_evidence": 1
+  },
+  "overwrite_used": true
+}

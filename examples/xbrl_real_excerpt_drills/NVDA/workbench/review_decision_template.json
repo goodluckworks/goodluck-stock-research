@@ -1,0 +1,92 @@
+{
+  "decision_template_schema_version": "v0.3.7",
+  "decision_source": "reviewer_workbench_template",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "fictional_company": false,
+  "fixture_data_status": "real_filing_excerpt_drill",
+  "extraction_run_id": "xbrl-nvda-fy2026-09f187116c7a",
+  "snapshot_sha256": "09f187116c7a742b38f608ca454016a3d9ac33bd1aac8a69095248c6539bcb4f",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "created_at": "2026-06-29T09:23:05+00:00",
+  "records": [
+    {
+      "decision_record_id": "decision-nvda-001",
+      "candidate_id": "nvda-revenue-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "nvda-revenue-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    },
+    {
+      "decision_record_id": "decision-nvda-002",
+      "candidate_id": "nvda-cash_and_equivalents-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "nvda-cash_and_equivalents-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    },
+    {
+      "decision_record_id": "decision-nvda-003",
+      "candidate_id": "nvda-diluted_shares-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "nvda-diluted_shares-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    }
+  ]
+}

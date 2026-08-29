@@ -1,0 +1,20 @@
+{
+  "mapping_review_schema_version": "v0.3.6",
+  "mapping_review_batch_id": "mapping-review-us-gaap-core-v034-superseded-001",
+  "mapping_version": "us-gaap-core-v0.3.4-fixture-1",
+  "mapping_status": "superseded",
+  "created_at": "2026-06-29T00:10:00Z",
+  "reviewer_id": "fixture-mapping-reviewer",
+  "records": [
+    {
+      "mapping_review_record_id": "mapping-review-revenue-superseded-001",
+      "mapping_id": "revenue-v034",
+      "normalized_field": "revenue",
+      "reviewer_decision": "supersede_mapping",
+      "review_status": "superseded",
+      "evidence_notes": "Synthetic supersession fixture.",
+      "reviewer_notes": "Superseded mapping blocks promotion.",
+      "review_timestamp": "2026-06-29T00:11:00Z"
+    }
+  ]
+}

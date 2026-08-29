@@ -1,0 +1,20 @@
+{
+  "quality_schema_version": "v0.6.0-quarantine",
+  "quality_package_id": "review-quality-mrvl-quarantine-a1aaa9bfaf36",
+  "ticker": "MRVL",
+  "company": "Marvell Technology, Inc.",
+  "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "overall_status": "ready_for_quarantine",
+  "checklist_complete": true,
+  "not_production_approval": true,
+  "records": [
+    {"candidate_id": "mrvl-operating_income-candidate-001", "normalized_field": "operating_income", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-net_income-candidate-001", "normalized_field": "net_income", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-operating_cash_flow-candidate-001", "normalized_field": "operating_cash_flow", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-capital_expenditure-candidate-001", "normalized_field": "capital_expenditure", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-cash_and_equivalents-candidate-001", "normalized_field": "cash_and_equivalents", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-total_debt-candidate-001", "normalized_field": "total_debt", "approval_readiness": "ready_for_quarantine", "blocking_issues": []},
+    {"candidate_id": "mrvl-diluted_shares-candidate-001", "normalized_field": "diluted_shares", "approval_readiness": "ready_for_quarantine", "blocking_issues": []}
+  ]
+}

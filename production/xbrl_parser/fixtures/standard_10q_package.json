@@ -1,0 +1,9 @@
+{
+  "ticker": "MRVL",
+  "form": "10-Q",
+  "issuer_type": "operating_company",
+  "fiscal_period": "Q1-2026",
+  "facts": [
+    {"field": "revenue", "value": 250, "unit": "USD", "period": "Q1-2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:Revenue", "source_locator": "fixture#qrev"}
+  ]
+}

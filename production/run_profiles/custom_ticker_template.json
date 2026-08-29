@@ -1,0 +1,7 @@
+{
+  "ticker": "TICKER",
+  "mode": "fixture",
+  "sec_only": true,
+  "market_data_csv": "path/to/user_market_data.csv",
+  "output": "path/to/output_dir"
+}

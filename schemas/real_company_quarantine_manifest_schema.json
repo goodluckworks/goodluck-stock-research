@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Real Company Quarantine Manifest",
+  "type": "object",
+  "required": [
+    "quarantine_schema_version",
+    "ticker",
+    "outputs",
+    "quarantined",
+    "not_production_data",
+    "not_investment_data",
+    "not_company_fact_until_verified",
+    "manual_review_required",
+    "not_for_trading",
+    "not_for_public_release",
+    "no_recommendation",
+    "no_dcf",
+    "no_peer_comps",
+    "no_implied_expectations",
+    "no_investment_conclusion"
+  ],
+  "properties": {
+    "quarantine_schema_version": {"type": "string", "const": "v0.6.0"},
+    "ticker": {"type": "string"},
+    "outputs": {"type": "object"},
+    "quarantined": {"type": "boolean", "const": true},
+    "not_production_data": {"type": "boolean", "const": true},
+    "not_investment_data": {"type": "boolean", "const": true},
+    "not_company_fact_until_verified": {"type": "boolean", "const": true},
+    "manual_review_required": {"type": "boolean", "const": true},
+    "not_for_trading": {"type": "boolean", "const": true},
+    "not_for_public_release": {"type": "boolean", "const": true},
+    "no_recommendation": {"type": "boolean", "const": true},
+    "no_dcf": {"type": "boolean", "const": true},
+    "no_peer_comps": {"type": "boolean", "const": true},
+    "no_implied_expectations": {"type": "boolean", "const": true},
+    "no_investment_conclusion": {"type": "boolean", "const": true}
+  },
+  "additionalProperties": true,
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"]
+}

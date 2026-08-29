@@ -1,0 +1,24 @@
+{
+  "policy_schema_version": "v0.6.0",
+  "ticker": "MRVL",
+  "sandbox_enabled": true,
+  "approval_scope": "quarantine_only",
+  "allowlist": ["MRVL"],
+  "quarantine_output_dir": "goodluck-stock-research/examples/real_company_quarantine/MRVL",
+  "review_batch_status_required": "approved_for_quarantine",
+  "quality_status_required": "ready_for_quarantine",
+  "mapping_review_status": "approved",
+  "mapping_lifecycle_status": "approved",
+  "minimum_confidence": "medium",
+  "not_public_release": true,
+  "required_quarantine_flags": {
+    "quarantined": true,
+    "not_production_data": true,
+    "not_investment_data": true,
+    "not_company_fact_until_verified": true,
+    "manual_review_required": true,
+    "not_for_trading": true,
+    "not_for_public_release": true,
+    "no_recommendation": true
+  }
+}

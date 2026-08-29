@@ -1,0 +1,25 @@
+{
+  "run_id": "xbrl-avgo-fy2025-1f3d337d3708",
+  "snapshot_sha256": "1f3d337d3708945b3aed545de6b3f180ba2bffa9c5c9173c652c992f46dfe350",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "records": [
+    {
+      "record_id": "provenance-avgo-revenue-candidate-001",
+      "candidate_id": "avgo-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "snapshot_sha256": "1f3d337d3708945b3aed545de6b3f180ba2bffa9c5c9173c652c992f46dfe350",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-002"
+      ],
+      "source_locator": "excerpt consolidated revenue line",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "AVGO-FY2025",
+      "period": "FY2025",
+      "unit": "USD millions",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "mapping_decision_log_id": "mapping-decision-log-mapping-review-us-gaap-core-v037-approved-001",
+  "created_at": "2026-06-29T09:09:44+00:00",
+  "mapping_file": "goodluck-stock-research/xbrl/mappings/us_gaap_core_v0_3_7.json",
+  "review_file": "goodluck-stock-research/xbrl/mapping_review_fixtures/mapping_review_approved_v0_3_7.json",
+  "mapping_review_batch_id": "mapping-review-us-gaap-core-v037-approved-001",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "mapping_status": "approved",
+  "review_passed": true,
+  "decision_counts": {
+    "approve_mapping": 9
+  },
+  "errors": [],
+  "boundary": [
+    "Mapping review validates mapping governance only.",
+    "No field extraction, normalized output, investment conclusion, or real-company approval is generated."
+  ]
+}

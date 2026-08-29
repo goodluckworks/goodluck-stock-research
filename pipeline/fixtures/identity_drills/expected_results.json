@@ -1,0 +1,7 @@
+{
+  "mrvl_identity_ok": "pass",
+  "mrvl_cik_mismatch": "fail",
+  "mrvl_accession_mismatch": "fail",
+  "mrvl_amendment_present": "warning",
+  "mrvl_restatement_conflict": "blocked"
+}

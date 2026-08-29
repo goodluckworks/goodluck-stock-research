@@ -1,0 +1,17 @@
+{
+  "pilot_schema_version": "v1.9.0",
+  "ticker": "MRVL",
+  "quality_gate": {
+    "decision": "usable_internal",
+    "reason": "quality usable for internal research"
+  },
+  "conclusion_issues": [],
+  "report_issues": [],
+  "approval": {
+    "state": "publishable_research_packet",
+    "reason": "human approval record present"
+  },
+  "not_personalized_advice": true,
+  "not_trading_instruction": true,
+  "not_broker_recommendation": true
+}

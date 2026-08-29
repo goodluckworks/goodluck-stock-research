@@ -1,0 +1,2 @@
+ticker,price,currency,timestamp,market_session,source_status
+MRVL,70.00,USD,2026-07-07T20:00:00Z,regular_close,indicative_sample

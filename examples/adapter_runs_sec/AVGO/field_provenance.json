@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "field_name": "raw_filing_text",
+      "value_status": "raw_snapshot_available",
+      "source_id": "avgo-10-k-0001730168-25-000121",
+      "source_field_name": "full filing text / SEC filing document",
+      "source_locator": "goodluck-stock-research/examples/adapter_runs_sec/AVGO/raw/raw-avgo-10-k-0001730168-25-000121-af8af9321049.htm",
+      "transformation": "official filing document downloaded or fixture copied; checksum recorded",
+      "confidence": "high",
+      "notes": "No financial field was inferred from the filing text."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "dashboard_schema_version": "v0.3.12",
+  "created_at": "2026-07-01T07:06:07+00:00",
+  "pipeline_root": "goodluck-stock-research/examples/pipeline_runs",
+  "packet_root": "goodluck-stock-research/examples/research_packets",
+  "runs": [
+    {
+      "run_dir": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only",
+      "pipeline_run_id": "pipeline-real_company_review_only-avgo-2026-07-01T070058z0000",
+      "mode": "real_company_review_only",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "fixture_data_status": "synthetic_or_excerpt_review_only",
+      "promotion_status": "blocked_or_not_applicable",
+      "normalized_csv_status": "blocked_or_not_applicable",
+      "dry_run_status": "blocked_or_not_applicable",
+      "packet_status": "present",
+      "blocked_steps": [
+        {
+          "step": "promotion",
+          "reason": "real_company_promotion_blocked"
+        },
+        {
+          "step": "normalized_csv",
+          "reason": "real_company_csv_generation_blocked"
+        },
+        {
+          "step": "v02_ratio_dry_run",
+          "reason": "real_company_dry_run_blocked"
+        }
+      ],
+      "audit_completeness": "complete",
+      "safety_boundary_result": "pass",
+      "unresolved_field_count": 0,
+      "missing_field_count": 0,
+      "approval_readiness": "review_only_or_not_applicable"
+    },
+    {
+      "run_dir": "goodluck-stock-research/examples/pipeline_runs/EXMP/full",
+      "pipeline_run_id": "pipeline-fictional_sandbox_full-exmp-2026-07-01T070057z0000",
+      "mode": "fictional_sandbox_full",
+      "ticker": "EXMP",
+      "company": "Example Semiconductor Corp.",
+      "fixture_data_status": "fictional_sample",
+      "promotion_status": "present",
+      "normalized_csv_status": "present",
+      "dry_run_status": "present",
+      "packet_status": "present",
+      "blocked_steps": [],
+      "audit_completeness": "complete",
+      "safety_boundary_result": "pass",
+      "unresolved_field_count": 1,
+      "missing_field_count": 20,
+      "approval_readiness": "review_only_or_not_applicable"
+    },
+    {
+      "run_dir": "goodluck-stock-research/examples/pipeline_runs/EXMP/partial",
+      "pipeline_run_id": "pipeline-fictional_sandbox_partial-exmp-2026-07-01T070057z0000",
+      "mode": "fictional_sandbox_partial",
+      "ticker": "EXMP",
+      "company": "Example Semiconductor Corp.",
+      "fixture_data_status": "fictional_sample",
+      "promotion_status": "present",
+      "normalized_csv_status": "present",
+      "dry_run_status": "present",
+      "packet_status": "present",
+      "blocked_steps": [],
+      "audit_completeness": "complete",
+      "safety_boundary_result": "pass",
+      "unresolved_field_count": 1,
+      "missing_field_count": 20,
+      "approval_readiness": "review_only_or_not_applicable"
+    },
+    {
+      "run_dir": "goodluck-stock-research/examples/pipeline_runs/MRVL/review_only",
+      "pipeline_run_id": "pipeline-real_company_review_only-mrvl-2026-07-01T070057z0000",
+      "mode": "real_company_review_only",
+      "ticker": "MRVL",
+      "company": "Marvell Technology, Inc.",
+      "fixture_data_status": "synthetic_or_excerpt_review_only",
+      "promotion_status": "blocked_or_not_applicable",
+      "normalized_csv_status": "blocked_or_not_applicable",
+      "dry_run_status": "blocked_or_not_applicable",
+      "packet_status": "present",
+      "blocked_steps": [
+        {
+          "step": "promotion",
+          "reason": "real_company_promotion_blocked"
+        },
+        {
+          "step": "normalized_csv",
+          "reason": "real_company_csv_generation_blocked"
+        },
+        {
+          "step": "v02_ratio_dry_run",
+          "reason": "real_company_dry_run_blocked"
+        }
+      ],
+      "audit_completeness": "complete",
+      "safety_boundary_result": "pass",
+      "unresolved_field_count": 0,
+      "missing_field_count": 0,
+      "approval_readiness": "review_only_or_not_applicable"
+    },
+    {
+      "run_dir": "goodluck-stock-research/examples/pipeline_runs/NVDA/review_only",
+      "pipeline_run_id": "pipeline-real_company_review_only-nvda-2026-07-01T070058z0000",
+      "mode": "real_company_review_only",
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "fixture_data_status": "synthetic_or_excerpt_review_only",
+      "promotion_status": "blocked_or_not_applicable",
+      "normalized_csv_status": "blocked_or_not_applicable",
+      "dry_run_status": "blocked_or_not_applicable",
+      "packet_status": "present",
+      "blocked_steps": [
+        {
+          "step": "promotion",
+          "reason": "real_company_promotion_blocked"
+        },
+        {
+          "step": "normalized_csv",
+          "reason": "real_company_csv_generation_blocked"
+        },
+        {
+          "step": "v02_ratio_dry_run",
+          "reason": "real_company_dry_run_blocked"
+        }
+      ],
+      "audit_completeness": "complete",
+      "safety_boundary_result": "pass",
+      "unresolved_field_count": 0,
+      "missing_field_count": 0,
+      "approval_readiness": "review_only_or_not_applicable"
+    }
+  ],
+  "blocked_real_company_matrix": [
+    {
+      "ticker": "MRVL",
+      "blocked_step": "promotion",
+      "result": "pass"
+    },
+    {
+      "ticker": "MRVL",
+      "blocked_step": "normalized_csv",
+      "result": "pass"
+    },
+    {
+      "ticker": "MRVL",
+      "blocked_step": "v02_dry_run",
+      "result": "pass"
+    },
+    {
+      "ticker": "NVDA",
+      "blocked_step": "promotion",
+      "result": "pass"
+    },
+    {
+      "ticker": "NVDA",
+      "blocked_step": "normalized_csv",
+      "result": "pass"
+    },
+    {
+      "ticker": "NVDA",
+      "blocked_step": "v02_dry_run",
+      "result": "pass"
+    },
+    {
+      "ticker": "AVGO",
+      "blocked_step": "promotion",
+      "result": "pass"
+    },
+    {
+      "ticker": "AVGO",
+      "blocked_step": "normalized_csv",
+      "result": "pass"
+    },
+    {
+      "ticker": "AVGO",
+      "blocked_step": "v02_dry_run",
+      "result": "pass"
+    }
+  ],
+  "no_investment_conclusion": true
+}

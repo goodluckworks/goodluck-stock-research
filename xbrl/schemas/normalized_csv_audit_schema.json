@@ -1,0 +1,39 @@
+{
+  "schema_name": "normalized_csv_audit_schema",
+  "schema_version": "v0.3.8",
+  "root_type": "object",
+  "required": ["audit_schema_version", "csv_path", "audit_path", "field_audit_records", "source_review_batch_id", "source_promotion_id", "mapping_version", "snapshot_sha256", "sandbox_status"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"],
+  "properties": {
+    "audit_schema_version": {"type": "string", "nonblank": true},
+    "csv_path": {"type": "string", "nonblank": true},
+    "audit_path": {"type": "string", "nonblank": true},
+    "source_review_batch_id": {"type": "string", "nonblank": true},
+    "source_promotion_id": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "sandbox_status": {"type": "string", "enum": ["fictional_sandbox_not_investment_data"]},
+    "field_audit_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["normalized_field", "csv_column", "csv_value", "candidate_id", "review_record_id", "reviewer_decision", "approved_value", "transformation", "unit", "period", "confidence", "provenance_reference"],
+        "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"],
+        "properties": {
+          "normalized_field": {"type": "string", "nonblank": true},
+          "csv_column": {"type": "string", "nonblank": true},
+          "csv_value": {"type": "string", "nonblank": true},
+          "candidate_id": {"type": "string", "nonblank": true},
+          "review_record_id": {"type": "string", "nonblank": true},
+          "reviewer_decision": {"type": "string", "enum": ["approve", "adjust"]},
+          "approved_value": {"type": "number"},
+          "transformation": {"type": "string", "nonblank": true},
+          "unit": {"type": "string", "nonblank": true},
+          "period": {"type": "string", "nonblank": true},
+          "confidence": {"type": "string", "enum": ["high", "medium"]},
+          "provenance_reference": {"type": "string", "nonblank": true}
+        }
+      }
+    }
+  }
+}

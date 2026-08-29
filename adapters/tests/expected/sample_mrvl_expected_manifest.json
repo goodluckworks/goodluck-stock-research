@@ -1,0 +1,12 @@
+{
+  "fixture": "sample_mrvl_filing_excerpt.html",
+  "company": "Marvell Technology, Inc.",
+  "ticker": "MRVL",
+  "form_type": "10-K",
+  "filing_date": "2026-03-11",
+  "reporting_period": "FY2026",
+  "fiscal_year": "2026",
+  "fiscal_quarter": "FY",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/example/mrvl-fixture.htm",
+  "sha256": "0f2b300b032570b225d183f4d77d921986e2e2ecc826396b7cfa1c5990a230f5"
+}

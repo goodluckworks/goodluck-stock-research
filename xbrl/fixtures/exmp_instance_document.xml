@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl-fixture>
+  <context id="EXMP-FY2025" periodType="duration" period="FY2025" dimensions="" />
+  <context id="EXMP-2025" periodType="instant" period="FY2025" dimensions="" />
+  <unit id="USD" measure="USD" />
+  <unit id="shares" measure="shares" />
+  <fact concept="us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="income_statement" locator="EXMP instance revenue">1200</fact>
+  <fact concept="us-gaap:GrossProfit" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="income_statement" locator="EXMP instance gross profit">720</fact>
+  <fact concept="us-gaap:OperatingIncomeLoss" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="income_statement" locator="EXMP instance operating income">310</fact>
+  <fact concept="us-gaap:NetIncomeLoss" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="income_statement" locator="EXMP instance net income">240</fact>
+  <fact concept="us-gaap:NetCashProvidedByUsedInOperatingActivities" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="cash_flow" locator="EXMP instance operating cash flow">330</fact>
+  <fact concept="us-gaap:PaymentsToAcquirePropertyPlantAndEquipment" contextRef="EXMP-FY2025" unitRef="USD" decimals="-6" scale="6" statement="cash_flow" locator="EXMP instance capex">-90</fact>
+  <fact concept="us-gaap:CashAndCashEquivalentsAtCarryingValue" contextRef="EXMP-2025" unitRef="USD" decimals="-6" scale="6" statement="balance_sheet" locator="EXMP instance cash">410</fact>
+  <fact concept="fixture:TotalDebt" contextRef="EXMP-2025" unitRef="USD" decimals="-6" scale="6" statement="balance_sheet" locator="EXMP instance debt">260</fact>
+  <fact concept="us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding" contextRef="EXMP-FY2025" unitRef="shares" decimals="-6" scale="6" statement="eps_note" locator="EXMP instance diluted shares" splitAdjusted="true">100</fact>
+</xbrl-fixture>

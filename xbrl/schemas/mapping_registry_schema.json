@@ -1,0 +1,15 @@
+{
+  "schema_name": "mapping_registry_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "required": ["mapping_version", "taxonomy_family", "supported_forms", "review_status", "notes", "records"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "mapping_version": {"type": "string", "nonblank": true},
+    "taxonomy_family": {"type": "string", "nonblank": true},
+    "supported_forms": {"type": "array"},
+    "review_status": {"type": "string", "enum": ["prototype_fixture_only"]},
+    "notes": {"type": "string", "nonblank": true},
+    "records": {"type": "array", "items": {"type": "object", "required": ["mapping_id", "normalized_field", "statement", "preferred_tags", "fallback_tags", "extension_tag_allowed", "period_type", "expected_unit", "sign_convention", "scale", "aggregation_rule", "required", "candidate_selection_rules", "confidence_rules", "ambiguity_behavior", "review_required", "notes", "relationship_metadata"]}}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_name": "parser_readiness_schema",
+  "schema_version": "v0.7.0",
+  "production_parser_ready_default": false,
+  "required_checks": [
+    "fixture_first_only",
+    "no_production_parser_claim",
+    "no_live_extraction",
+    "taxonomy_relationship_metadata",
+    "candidate_provenance",
+    "review_quality_references"
+  ],
+  "forbidden_claims": [
+    "production parser ready",
+    "live extraction enabled",
+    "complete filing parsing"
+  ]
+}

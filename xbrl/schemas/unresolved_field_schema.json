@@ -1,0 +1,13 @@
+{
+  "schema_name": "unresolved_field_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "required": ["run_id", "unresolved_fields", "rejected_facts", "warnings"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "run_id": {"type": "string", "nonblank": true},
+    "unresolved_fields": {"type": "array", "items": {"type": "object", "required": ["normalized_field", "reason_code", "reason", "source_fact_ids", "rejected_facts", "competing_candidate_ids", "review_required", "suggested_action"]}},
+    "rejected_facts": {"type": "array"},
+    "warnings": {"type": "array"}
+  }
+}

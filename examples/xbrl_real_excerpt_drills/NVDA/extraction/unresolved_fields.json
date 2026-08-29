@@ -1,0 +1,81 @@
+{
+  "run_id": "xbrl-nvda-fy2026-09f187116c7a",
+  "unresolved_fields": [
+    {
+      "normalized_field": "gross_profit",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "operating_income",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "net_income",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "operating_cash_flow",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "capital_expenditure",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "total_debt",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    }
+  ],
+  "rejected_facts": [
+    {
+      "normalized_field": "revenue",
+      "fact_id": "fact-001",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "NVDA-FY2026-DATA-CENTER",
+      "source_locator": "excerpt dimensional revenue line",
+      "reasons": [
+        "dimension_conflict"
+      ]
+    }
+  ],
+  "warnings": [
+    "Fixture-oriented prototype; not production iXBRL coverage.",
+    "All candidates require human review."
+  ]
+}

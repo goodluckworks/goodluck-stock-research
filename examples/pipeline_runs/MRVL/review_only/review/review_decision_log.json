@@ -1,0 +1,18 @@
+{
+  "decision_log_id": "decision-log-mrvl-a1aaa9bfaf36",
+  "created_at": "2026-06-29T09:22:19+00:00",
+  "source_decision_file": "goodluck-stock-research/examples/xbrl_review_workbenches/MRVL/review_decision_template.json",
+  "quality_score_file": "goodluck-stock-research/examples/xbrl_review_quality/MRVL/review_quality_score.json",
+  "quality_score_reference": "review-quality-mrvl-a1aaa9bfaf36",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/MRVL/extraction_candidates.json",
+  "manifest_file": "goodluck-stock-research/examples/xbrl_extraction_runs/MRVL/extraction_run_manifest.json",
+  "review_batch_id": "normalized-review-mrvl-a1aaa9bfaf36",
+  "extraction_run_id": "xbrl-mrvl-fy2026-a1aaa9bfaf36",
+  "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "ticker": "MRVL",
+  "decision_counts": {
+    "unresolved": 7
+  },
+  "overwrite_used": true
+}

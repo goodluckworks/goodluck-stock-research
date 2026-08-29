@@ -1,0 +1,61 @@
+{
+  "run_id": "xbrl-nvda-fy2026-09f187116c7a",
+  "snapshot_sha256": "09f187116c7a742b38f608ca454016a3d9ac33bd1aac8a69095248c6539bcb4f",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "records": [
+    {
+      "record_id": "provenance-nvda-revenue-candidate-001",
+      "candidate_id": "nvda-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "snapshot_sha256": "09f187116c7a742b38f608ca454016a3d9ac33bd1aac8a69095248c6539bcb4f",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-002"
+      ],
+      "source_locator": "excerpt consolidated revenue line",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "NVDA-FY2026",
+      "period": "FY2026",
+      "unit": "USD millions",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    },
+    {
+      "record_id": "provenance-nvda-cash_and_equivalents-candidate-001",
+      "candidate_id": "nvda-cash_and_equivalents-candidate-001",
+      "normalized_field": "cash_and_equivalents",
+      "snapshot_sha256": "09f187116c7a742b38f608ca454016a3d9ac33bd1aac8a69095248c6539bcb4f",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-003"
+      ],
+      "source_locator": "excerpt cash line",
+      "concept_qname": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "context_id": "NVDA-FY2026",
+      "period": "FY2026",
+      "unit": "USD millions",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    },
+    {
+      "record_id": "provenance-nvda-diluted_shares-candidate-001",
+      "candidate_id": "nvda-diluted_shares-candidate-001",
+      "normalized_field": "diluted_shares",
+      "snapshot_sha256": "09f187116c7a742b38f608ca454016a3d9ac33bd1aac8a69095248c6539bcb4f",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-005"
+      ],
+      "source_locator": "excerpt split-adjusted diluted shares",
+      "concept_qname": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+      "context_id": "NVDA-FY2026",
+      "period": "FY2026",
+      "unit": "million shares",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "decision_template_schema_version": "v0.3.7",
+  "decision_source": "reviewer_workbench_template",
+  "company": "Marvell Technology, Inc.",
+  "ticker": "MRVL",
+  "fictional_company": false,
+  "fixture_data_status": "real_filing_excerpt_drill",
+  "extraction_run_id": "xbrl-mrvl-fy2026-29b488050b1b",
+  "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "created_at": "2026-06-29T09:23:05+00:00",
+  "records": [
+    {
+      "decision_record_id": "decision-mrvl-001",
+      "candidate_id": "mrvl-operating_income-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "mrvl-operating_income-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    },
+    {
+      "decision_record_id": "decision-mrvl-002",
+      "candidate_id": "mrvl-operating_cash_flow-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "mrvl-operating_cash_flow-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    },
+    {
+      "decision_record_id": "decision-mrvl-003",
+      "candidate_id": "mrvl-capital_expenditure-candidate-001",
+      "reviewer_decision": "unresolved",
+      "reviewer_id": "fixture-reviewer",
+      "reviewer_notes": "Synthetic real-company-shaped fixture remains unapproved.",
+      "approved_value": "not_approved",
+      "approved_unit": "not_approved",
+      "approval_timestamp": "not_approved",
+      "prior_review_record_id": "not_applicable",
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "mrvl-capital_expenditure-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": false,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": true
+      }
+    }
+  ]
+}

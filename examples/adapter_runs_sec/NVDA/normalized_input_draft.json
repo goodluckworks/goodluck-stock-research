@@ -1,0 +1,10 @@
+{
+  "status": "draft_unpopulated",
+  "reason": "This adapter packages SEC evidence only; financial fields require manual normalization or a separately approved extraction adapter.",
+  "target_schemas": [
+    "financials_input_schema",
+    "valuation_input_schema",
+    "peer_comps_input_schema",
+    "assumptions_schema"
+  ]
+}

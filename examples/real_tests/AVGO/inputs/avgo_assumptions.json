@@ -1,0 +1,24 @@
+{
+  "company": "Broadcom Inc.",
+  "ticker": "AVGO",
+  "currency": "USD",
+  "amount_unit": "USD millions",
+  "per_share_unit": "USD/share",
+  "reporting_period": "TTM ended 2026-05-03",
+  "basis": "Base FCF is official-release-derived TTM operating cash flow less purchases of property, plant and equipment: FY2025 plus H1 FY2026 less H1 FY2025. It is treated as FCFE / levered FCF as a research approximation; no net debt subtraction is applied. AVGO has material acquisition debt, interest, amortization, restructuring and integration effects, so this simplified DCF is a pressure test rather than a formal target-price model. Growth, discount-rate and terminal-growth paths are analyst test assumptions, not company guidance.",
+  "fcf_type": "FCFE",
+  "base_year_fcf": 32762,
+  "projection_years": 5,
+  "revenue_or_fcf_growth_cases": {
+    "bear": [0.08, 0.06, 0.05, 0.04, 0.03],
+    "base": [0.15, 0.12, 0.10, 0.08, 0.06],
+    "bull": [0.22, 0.18, 0.14, 0.10, 0.08]
+  },
+  "discount_rates": [0.09, 0.10, 0.11, 0.12, 0.13],
+  "terminal_growth_rates": [0.02, 0.025, 0.03],
+  "net_debt": 45279,
+  "diluted_shares": 4876,
+  "source": "Broadcom FY2025 earnings release and Q2 FY2026 earnings release / Form 10-Q",
+  "source_date": "2026-06-09",
+  "source_status": "verified"
+}

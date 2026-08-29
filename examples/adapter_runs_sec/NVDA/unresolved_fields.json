@@ -1,0 +1,72 @@
+{
+  "unresolved_fields": [
+    {
+      "field_name": "revenue",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "gross_profit",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "operating_income",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "net_income",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "operating_cash_flow",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "capital_expenditure",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "cash_and_equivalents",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "total_debt",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    },
+    {
+      "field_name": "diluted_shares",
+      "reason": "v0.3.2 packages official evidence only and does not perform financial extraction",
+      "required_for": "financials_input_schema and downstream research",
+      "severity": "blocking_for_normalized_financials",
+      "suggested_manual_action": "Manually normalize the field or use a separately approved extraction adapter."
+    }
+  ],
+  "warnings": [
+    "No financial or XBRL extraction was performed.",
+    "The adapter does not discover newer amendments or determine that this is the latest effective filing."
+  ],
+  "errors": []
+}

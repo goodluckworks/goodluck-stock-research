@@ -1,0 +1,41 @@
+{
+  "quarantine_schema_version": "v0.6.0",
+  "ticker": "MRVL",
+  "company": "Marvell Technology, Inc.",
+  "review_batch": "goodluck-stock-research/examples/real_company_quarantine/MRVL/approval_inputs/review_batch_approved_for_quarantine.json",
+  "quality_score": "goodluck-stock-research/examples/real_company_quarantine/MRVL/approval_inputs/quality_score_ready_for_quarantine.json",
+  "candidate_package": "goodluck-stock-research/examples/pipeline_runs/MRVL/review_only/candidate/extraction_candidates.json",
+  "approval_policy": "goodluck-stock-research/examples/real_company_quarantine/MRVL/approval_inputs/approval_policy.json",
+  "outputs": {
+    "quarantine_manifest": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantine_manifest.json",
+    "quarantined_csv": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_normalized_sandbox.csv",
+    "csv_audit": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_csv_audit.json",
+    "ratio_output": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_ratio_dry_run.md",
+    "ratio_manifest": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_ratio_dry_run_manifest.json",
+    "quarantine_report": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantine_report.md"
+  },
+  "review_batch_status": "approved_for_quarantine",
+  "quality_status": "ready_for_quarantine",
+  "approved_fields": [
+    "operating_income",
+    "net_income",
+    "operating_cash_flow",
+    "capital_expenditure",
+    "cash_and_equivalents",
+    "total_debt",
+    "diluted_shares"
+  ],
+  "quarantined": true,
+  "not_production_data": true,
+  "not_investment_data": true,
+  "not_company_fact_until_verified": true,
+  "manual_review_required": true,
+  "not_for_trading": true,
+  "not_for_public_release": true,
+  "no_recommendation": true,
+  "no_dcf": true,
+  "no_peer_comps": true,
+  "no_implied_expectations": true,
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-03T02:42:39+00:00"
+}

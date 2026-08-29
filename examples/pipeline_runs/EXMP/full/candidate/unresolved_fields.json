@@ -1,0 +1,9 @@
+{
+  "run_id": "xbrl-exmp-fy2025-05a7dc26d188",
+  "unresolved_fields": [],
+  "rejected_facts": [],
+  "warnings": [
+    "Fixture-oriented prototype; not production iXBRL coverage.",
+    "All candidates require human review."
+  ]
+}

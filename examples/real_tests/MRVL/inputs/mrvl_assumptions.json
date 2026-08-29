@@ -1,0 +1,24 @@
+{
+  "company": "Marvell Technology, Inc.",
+  "ticker": "MRVL",
+  "currency": "USD",
+  "amount_unit": "USD millions",
+  "per_share_unit": "USD/share",
+  "reporting_period": "TTM ended 2026-05-02",
+  "basis": "Base FCF is OCF - capex and is treated as FCFE / levered FCF as a research approximation for this tool test; no net debt subtraction should be applied in the DCF bridge; amounts in USD millions and diluted shares in millions; growth, discount-rate, and terminal-growth paths are analyst test assumptions rather than company guidance",
+  "fcf_type": "FCFE",
+  "base_year_fcf": 1665.4,
+  "projection_years": 5,
+  "revenue_or_fcf_growth_cases": {
+    "bear": [0.05, 0.04, 0.03, 0.03, 0.02],
+    "base": [0.15, 0.12, 0.10, 0.08, 0.06],
+    "bull": [0.25, 0.20, 0.15, 0.10, 0.08]
+  },
+  "discount_rates": [0.12, 0.14, 0.16, 0.18],
+  "terminal_growth_rates": [0.02, 0.025, 0.03],
+  "net_debt": 1117.7,
+  "diluted_shares": 893.3,
+  "source": "Marvell FY2026 10-K and Q1 FY2027 10-Q for base inputs; scenario assumptions prepared solely for v0.2.2 methodology validation",
+  "source_date": "2026-06-24",
+  "source_status": "partially_verified"
+}

@@ -1,0 +1,55 @@
+{
+  "taxonomy_drift.html": {
+    "expected": "unresolved",
+    "reason_code": "missing_field",
+    "notes": "Unmapped future taxonomy concept must not be accepted."
+  },
+  "extension_without_anchor.html": {
+    "expected": "unresolved",
+    "reason_code": "missing_field",
+    "notes": "Unanchored extension tag is not mapped."
+  },
+  "extension_weak_relationship.html": {
+    "expected": "candidate",
+    "confidence": "medium",
+    "warning": "fallback_or_extension_tag_requires_review"
+  },
+  "restatement_conflict.html": {
+    "expected": "unresolved",
+    "reason_code": "multiple_candidates"
+  },
+  "debt_double_count_complex.html": {
+    "expected": "unresolved",
+    "reason_code": "debt_double_count_risk"
+  },
+  "capex_scope_ambiguity.html": {
+    "expected": "unresolved",
+    "reason_code": "multiple_candidates"
+  },
+  "restricted_cash_confusion.html": {
+    "expected": "unresolved",
+    "reason_code": "missing_field"
+  },
+  "diluted_shares_wrong_duration.html": {
+    "expected": "unresolved",
+    "reason_code": "no_eligible_fact"
+  },
+  "mixed_units.html": {
+    "expected": "candidate_with_rejected_peer",
+    "rejected_reason": "wrong_unit"
+  },
+  "material_change_threshold.html": {
+    "expected": "warning",
+    "warning": "material_change_threshold_review_required"
+  },
+  "dimension_only_revenue.html": {
+    "expected": "unresolved",
+    "reason_code": "no_eligible_fact",
+    "rejected_reason": "dimension_conflict"
+  },
+  "duration_vs_instant_mismatch.html": {
+    "expected": "unresolved",
+    "reason_code": "no_eligible_fact",
+    "rejected_reason": "wrong_period_type"
+  }
+}

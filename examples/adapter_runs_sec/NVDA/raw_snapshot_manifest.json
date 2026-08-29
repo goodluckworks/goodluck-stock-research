@@ -1,0 +1,21 @@
+{
+  "snapshot_id": "raw-nvda-10-k-0001045810-26-000021-af8af9321049",
+  "adapter_name": "sec_official_filing_adapter",
+  "adapter_version": "v0.3.2",
+  "mode": "fixture",
+  "input_file": "goodluck-stock-research/adapters/tests/fixtures/sec_filing_document_sample.html",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "final_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "raw_snapshot_path": "goodluck-stock-research/examples/adapter_runs_sec/NVDA/raw/raw-nvda-10-k-0001045810-26-000021-af8af9321049.htm",
+  "sha256": "af8af93210492293be69631aa1df5d1799a1ed1392246fcb9b2803185a7457cb",
+  "created_at": "2026-06-25T07:47:53+00:00",
+  "retrieved_at": "2026-06-25T12:00:00Z",
+  "http_status": "fixture",
+  "sec_domain_validated": true,
+  "immutable": true,
+  "overwrite_used": false,
+  "request_count": 0,
+  "content_type": "text/html",
+  "byte_size": 311,
+  "notes": "Offline fixture example; source URL is metadata only and was not opened."
+}

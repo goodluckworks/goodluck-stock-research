@@ -1,0 +1,452 @@
+{
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "taxonomy_family": "us-gaap fixture subset",
+  "supported_forms": [
+    "10-K",
+    "10-Q"
+  ],
+  "review_status": "prototype_fixture_only",
+  "notes": "Fixture-oriented mappings with v0.3.7 taxonomy relationship metadata; not production SEC taxonomy coverage.",
+  "records": [
+    {
+      "mapping_id": "revenue-v037",
+      "normalized_field": "revenue",
+      "statement": "income_statement",
+      "preferred_tags": [
+        "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fallback_tags": [
+        "us-gaap:SalesRevenueNet",
+        "fixture:ConsolidatedRevenue"
+      ],
+      "extension_tag_allowed": true,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "listed fallback tag and exact context",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Consolidated revenue only. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Revenue from contracts with customers, excluding assessed tax",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "presentation_parent": "income_statement_revenue",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "relationship_basis": "standard tag; fixture fallback fixture:ConsolidatedRevenue requires reviewed revenue relationship",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-revenue-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard tag; fixture fallback fixture:ConsolidatedRevenue requires reviewed revenue relationship"
+      }
+    },
+    {
+      "mapping_id": "gross-profit-v037",
+      "normalized_field": "gross_profit",
+      "statement": "income_statement",
+      "preferred_tags": [
+        "us-gaap:GrossProfit"
+      ],
+      "fallback_tags": [],
+      "extension_tag_allowed": false,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "not used",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Missing gross profit remains unresolved; do not reconstruct. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Gross profit",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:GrossProfit",
+        "presentation_parent": "income_statement_profitability",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:GrossProfit",
+        "relationship_basis": "standard tag only; missing gross profit remains unresolved",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-gross-profit-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard tag only; missing gross profit remains unresolved"
+      }
+    },
+    {
+      "mapping_id": "operating-income-v037",
+      "normalized_field": "operating_income",
+      "statement": "income_statement",
+      "preferred_tags": [
+        "us-gaap:OperatingIncomeLoss"
+      ],
+      "fallback_tags": [],
+      "extension_tag_allowed": false,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "not used",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "GAAP operating income or loss. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Operating income or loss",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:OperatingIncomeLoss",
+        "presentation_parent": "income_statement_operating_result",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:OperatingIncomeLoss",
+        "relationship_basis": "standard operating result concept; not income before tax",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-operating-income-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard operating result concept; not income before tax"
+      }
+    },
+    {
+      "mapping_id": "net-income-v037",
+      "normalized_field": "net_income",
+      "statement": "income_statement",
+      "preferred_tags": [
+        "us-gaap:NetIncomeLoss"
+      ],
+      "fallback_tags": [
+        "us-gaap:ProfitLoss"
+      ],
+      "extension_tag_allowed": false,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "listed fallback and exact context",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Attribution basis still requires human review. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Net income or loss",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:NetIncomeLoss",
+        "presentation_parent": "income_statement_bottom_line",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:NetIncomeLoss",
+        "relationship_basis": "standard net income concept; attribution basis still requires review notes",
+        "relationship_confidence": "medium",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-net-income-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard net income concept; attribution basis still requires review notes"
+      }
+    },
+    {
+      "mapping_id": "operating-cash-flow-v037",
+      "normalized_field": "operating_cash_flow",
+      "statement": "cash_flow",
+      "preferred_tags": [
+        "us-gaap:NetCashProvidedByUsedInOperatingActivities"
+      ],
+      "fallback_tags": [],
+      "extension_tag_allowed": false,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "not used",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Operating activities total only. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Net cash provided by used in operating activities",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "presentation_parent": "cash_flow_operating_activities",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "relationship_basis": "standard operating activities total only",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-operating-cash-flow-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard operating activities total only"
+      }
+    },
+    {
+      "mapping_id": "capital-expenditure-v037",
+      "normalized_field": "capital_expenditure",
+      "statement": "cash_flow",
+      "preferred_tags": [
+        "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+      ],
+      "fallback_tags": [
+        "fixture:PaymentsForPropertyAndEquipment"
+      ],
+      "extension_tag_allowed": true,
+      "period_type": "duration",
+      "expected_unit": "currency",
+      "sign_convention": "normalize_to_positive_outflow_with_recorded_absolute_value",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only_no_unrelated_investing_sum",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and explicit sign transformation",
+        "medium": "listed fallback and explicit sign transformation",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "High-risk field: source sign must be preserved and transformation recorded. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Payments to acquire property plant and equipment",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "presentation_parent": "cash_flow_investing_activities",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "relationship_basis": "PP&E acquisition/payment concept; excludes business combinations, capitalized software and unrelated investing cash flows unless separately reviewed",
+        "relationship_confidence": "medium",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-capital-expenditure-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "PP&E acquisition/payment concept; excludes business combinations, capitalized software and unrelated investing cash flows unless separately reviewed"
+      }
+    },
+    {
+      "mapping_id": "cash-v037",
+      "normalized_field": "cash_and_equivalents",
+      "statement": "balance_sheet",
+      "preferred_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue"
+      ],
+      "fallback_tags": [],
+      "extension_tag_allowed": false,
+      "period_type": "instant",
+      "expected_unit": "currency",
+      "sign_convention": "preserve",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag and exact context",
+        "medium": "not used",
+        "low": "never selected"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Cash only; no automatic short-term investment inclusion. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Cash and cash equivalents at carrying value",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "presentation_parent": "balance_sheet_current_assets",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "relationship_basis": "cash-only concept; restricted cash, short-term investments and marketable securities are excluded from this field",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-cash-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "cash-only concept; restricted cash, short-term investments and marketable securities are excluded from this field"
+      }
+    },
+    {
+      "mapping_id": "total-debt-v037",
+      "normalized_field": "total_debt",
+      "statement": "balance_sheet",
+      "preferred_tags": [
+        "fixture:TotalDebt"
+      ],
+      "fallback_tags": [
+        "us-gaap:LongTermDebtAndFinanceLeaseObligationsCurrent",
+        "us-gaap:LongTermDebtAndFinanceLeaseObligationsNoncurrent"
+      ],
+      "extension_tag_allowed": true,
+      "period_type": "instant",
+      "expected_unit": "currency",
+      "sign_convention": "preserve_nonnegative",
+      "scale": "input values already use amount_unit",
+      "aggregation_rule": "use_total_or_components_never_both",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "debt_overlap_check"
+      ],
+      "confidence_rules": {
+        "high": "single total tag only",
+        "medium": "complete non-overlapping current and noncurrent components only",
+        "low": "overlap or incomplete components"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "High-risk field: total plus components is a double-count trap. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Total debt fixture concept or reviewed current/noncurrent debt components",
+        "concept_type": "fixture_local",
+        "taxonomy_namespace": "fixture",
+        "closest_standard_concept": "us-gaap:LongTermDebtAndFinanceLeaseObligations",
+        "presentation_parent": "balance_sheet_liabilities_or_debt_note",
+        "presentation_children": [
+          "us-gaap:LongTermDebtAndFinanceLeaseObligationsCurrent",
+          "us-gaap:LongTermDebtAndFinanceLeaseObligationsNoncurrent"
+        ],
+        "calculation_parent": "fixture:TotalDebt",
+        "calculation_children": [
+          "us-gaap:LongTermDebtAndFinanceLeaseObligationsCurrent",
+          "us-gaap:LongTermDebtAndFinanceLeaseObligationsNoncurrent"
+        ],
+        "anchor_concept": "us-gaap:LongTermDebtAndFinanceLeaseObligations",
+        "relationship_basis": "use a reviewed total or non-overlapping current plus noncurrent components; never combine total with components",
+        "relationship_confidence": "medium",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-total-debt-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "use a reviewed total or non-overlapping current plus noncurrent components; never combine total with components"
+      }
+    },
+    {
+      "mapping_id": "diluted-shares-v037",
+      "normalized_field": "diluted_shares",
+      "statement": "eps_note",
+      "preferred_tags": [
+        "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+      ],
+      "fallback_tags": [],
+      "extension_tag_allowed": false,
+      "period_type": "duration",
+      "expected_unit": "shares",
+      "sign_convention": "preserve_nonnegative",
+      "scale": "input values already use million shares",
+      "aggregation_rule": "identity_only",
+      "required": true,
+      "candidate_selection_rules": [
+        "exact_period",
+        "exact_unit",
+        "no_dimensions",
+        "single_candidate",
+        "split_basis_recorded"
+      ],
+      "confidence_rules": {
+        "high": "preferred tag, exact duration, split basis recorded",
+        "medium": "preferred tag but split review warning",
+        "low": "wrong period or ending shares"
+      },
+      "ambiguity_behavior": "unresolved",
+      "review_required": true,
+      "notes": "Weighted-average diluted shares, not ending shares. v0.3.7 relationship metadata is fixture-level and review-oriented.",
+      "relationship_metadata": {
+        "concept_label": "Weighted average number of diluted shares outstanding",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "presentation_parent": "eps_note",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "relationship_basis": "weighted-average diluted shares for exact duration; not ending shares or basic shares",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-diluted-shares-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "weighted-average diluted shares for exact duration; not ending shares or basic shares"
+      }
+    }
+  ]
+}

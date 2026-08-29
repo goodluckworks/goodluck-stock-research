@@ -1,0 +1,156 @@
+{
+  "quality_schema_version": "v0.3.7",
+  "quality_package_id": "review-quality-nvda-c08153438a7f",
+  "extraction_run_id": "xbrl-nvda-fy2026-c08153438a7f",
+  "snapshot_sha256": "c08153438a7f3a97d4f34b0f6fa3136d8fd7be0fc1fbf84ddd0f3173e96c5834",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "fictional_company": false,
+  "created_at": "2026-06-29T09:22:19+00:00",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/NVDA/extraction_candidates.json",
+  "provenance_file": "goodluck-stock-research/examples/xbrl_extraction_runs/NVDA/field_provenance.json",
+  "records": [
+    {
+      "candidate_id": "nvda-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-gross_profit-candidate-001",
+      "normalized_field": "gross_profit",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-operating_income-candidate-001",
+      "normalized_field": "operating_income",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-net_income-candidate-001",
+      "normalized_field": "net_income",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-operating_cash_flow-candidate-001",
+      "normalized_field": "operating_cash_flow",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-capital_expenditure-candidate-001",
+      "normalized_field": "capital_expenditure",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "source_sign_preserved_in_source_value",
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-cash_and_equivalents-candidate-001",
+      "normalized_field": "cash_and_equivalents",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-total_debt-candidate-001",
+      "normalized_field": "total_debt",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "nvda-diluted_shares-candidate-001",
+      "normalized_field": "diluted_shares",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    }
+  ],
+  "boundary": [
+    "Scores are advisory only.",
+    "Scores do not approve fields.",
+    "Real-company-shaped fixtures remain unapproved and unpromoted."
+  ]
+}

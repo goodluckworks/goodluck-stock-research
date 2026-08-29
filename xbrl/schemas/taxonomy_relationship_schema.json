@@ -1,0 +1,39 @@
+{
+  "schema_name": "taxonomy_relationship_schema",
+  "schema_version": "v0.3.7",
+  "root_type": "object",
+  "required": ["relationship_schema_version", "relationship_package_id", "mapping_version", "created_at", "records"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "relationship_schema_version": {"type": "string", "nonblank": true},
+    "relationship_package_id": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "created_at": {"type": "string", "nonblank": true},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relationship_id", "concept_qname", "concept_label", "concept_type", "taxonomy_namespace", "taxonomy_version", "closest_standard_concept", "presentation_parent", "presentation_children", "calculation_parent", "calculation_children", "anchor_concept", "relationship_basis", "relationship_confidence", "relationship_evidence_notes", "relationship_review_status"],
+        "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+        "properties": {
+          "relationship_id": {"type": "string", "nonblank": true},
+          "concept_qname": {"type": "string", "nonblank": true},
+          "concept_label": {"type": "string", "nonblank": true},
+          "concept_type": {"type": "string", "enum": ["standard", "extension", "fixture_local"]},
+          "taxonomy_namespace": {"type": "string", "nonblank": true},
+          "taxonomy_version": {"type": "string", "nonblank": true},
+          "closest_standard_concept": {"type": "string", "nonblank": true},
+          "presentation_parent": {"type": "string", "nonblank": true},
+          "presentation_children": {"type": "array"},
+          "calculation_parent": {"type": "string", "nonblank": true},
+          "calculation_children": {"type": "array"},
+          "anchor_concept": {"type": "string", "nonblank": true},
+          "relationship_basis": {"type": "string", "nonblank": true},
+          "relationship_confidence": {"type": "string", "enum": ["high", "medium", "low", "missing"]},
+          "relationship_evidence_notes": {"type": "string", "nonblank": true},
+          "relationship_review_status": {"type": "string", "enum": ["reviewed", "needs_more_evidence", "unsupported", "not_applicable"]}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_name": "review_checklist_schema",
+  "schema_version": "v0.3.7",
+  "root_type": "object",
+  "required": ["checklist_schema_version", "candidate_id", "period_checked", "unit_checked", "context_checked", "dimensions_checked", "sign_checked", "scale_checked", "relationship_checked", "competing_candidates_checked", "prior_period_checked", "materiality_checked", "reviewer_notes_present"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "checklist_schema_version": {"type": "string", "nonblank": true},
+    "candidate_id": {"type": "string", "nonblank": true},
+    "period_checked": {"type": "boolean"},
+    "unit_checked": {"type": "boolean"},
+    "context_checked": {"type": "boolean"},
+    "dimensions_checked": {"type": "boolean"},
+    "sign_checked": {"type": "boolean"},
+    "scale_checked": {"type": "boolean"},
+    "relationship_checked": {"type": "boolean"},
+    "competing_candidates_checked": {"type": "boolean"},
+    "prior_period_checked": {"type": "boolean"},
+    "materiality_checked": {"type": "boolean"},
+    "reviewer_notes_present": {"type": "boolean"}
+  }
+}

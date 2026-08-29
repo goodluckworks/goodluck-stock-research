@@ -1,0 +1,22 @@
+{
+  "period_type": "annual",
+  "rows": [
+    {
+      "field": "revenue",
+      "source": "fixture official filing excerpt",
+      "value": 1000.0
+    },
+    {
+      "field": "net_income",
+      "source": "fixture official filing excerpt",
+      "value": 120.0
+    },
+    {
+      "field": "operating_cash_flow",
+      "source": "fixture official filing excerpt",
+      "value": 180.0
+    }
+  ],
+  "ticker": "MRVL",
+  "unresolved_fields": []
+}

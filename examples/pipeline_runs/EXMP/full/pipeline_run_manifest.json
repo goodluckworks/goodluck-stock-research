@@ -1,0 +1,75 @@
+{
+  "pipeline_schema_version": "v0.3.10",
+  "pipeline_run_id": "pipeline-fictional_sandbox_full-exmp-2026-07-01T070057z0000",
+  "mode": "fictional_sandbox_full",
+  "ticker": "EXMP",
+  "company": "Example Semiconductor Corp.",
+  "fixture_data_status": "fictional_sample",
+  "run_steps": [
+    {
+      "step": "candidate",
+      "status": "copied_local_fixture"
+    },
+    {
+      "step": "workbench",
+      "status": "copied_local_fixture"
+    },
+    {
+      "step": "quality",
+      "status": "copied_local_fixture"
+    },
+    {
+      "step": "review",
+      "status": "copied_local_fixture"
+    },
+    {
+      "step": "promotion",
+      "status": "copied_local_fixture"
+    },
+    {
+      "step": "normalized_csv_sandbox",
+      "status": "passed"
+    },
+    {
+      "step": "v02_ratio_dry_run",
+      "status": "passed"
+    },
+    {
+      "step": "end_to_end_audit",
+      "status": "passed"
+    }
+  ],
+  "input_paths": {
+    "candidate": "goodluck-stock-research/examples/xbrl_extraction_runs/EXMP",
+    "workbench": "goodluck-stock-research/examples/xbrl_review_workbenches/EXMP",
+    "quality": "goodluck-stock-research/examples/xbrl_review_quality/EXMP",
+    "review": "goodluck-stock-research/examples/xbrl_review_decisions/EXMP",
+    "promotion": "goodluck-stock-research/examples/xbrl_promotion_runs/EXMP"
+  },
+  "output_paths": {
+    "candidate": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/candidate",
+    "workbench": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/workbench",
+    "quality": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/quality",
+    "review": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/review",
+    "promotion": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/promotion",
+    "normalized_csv_sandbox": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox",
+    "v02_ratio_dry_run": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/v02_ratio_dry_run",
+    "end_to_end_audit": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/end_to_end_audit"
+  },
+  "blocked_steps": [],
+  "warnings": [
+    "Fictional sandbox only; not production research."
+  ],
+  "audit_references": {
+    "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+    "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+    "review_batch_id": "normalized-review-exmp-05a7dc26d188",
+    "promotion_id": "promotion-exmp-fy2025-05a7dc26d188",
+    "normalized_csv_manifest": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox/normalized_csv_manifest.json",
+    "v02_dry_run_manifest": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/v02_ratio_dry_run/v02_dry_run_manifest.json",
+    "dry_run_id": "v02-ratio-sandbox-exmp-05a7dc26d188"
+  },
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-01T07:00:57+00:00",
+  "output_dir": "goodluck-stock-research/examples/pipeline_runs/EXMP/full"
+}

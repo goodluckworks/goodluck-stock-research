@@ -1,0 +1,28 @@
+{
+  "schema_name": "approved_normalized_draft_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "block_real_company_promotion": true,
+  "required": ["status", "promotion_id", "fictional_company", "company", "ticker", "reporting_period", "currency", "amount_unit", "per_share_unit", "mapping_version", "snapshot_sha256", "mapping_review_reference", "review_decision_log_reference", "quality_score_reference", "package_audit_reference", "fields", "excluded_records", "limitations"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "status": {"type": "string", "enum": ["fictional_approved_normalized_draft"]},
+    "promotion_id": {"type": "string", "nonblank": true},
+    "fictional_company": {"type": "boolean"},
+    "company": {"type": "string", "nonblank": true},
+    "ticker": {"type": "string", "nonblank": true},
+    "reporting_period": {"type": "string", "nonblank": true},
+    "currency": {"type": "string", "nonblank": true},
+    "amount_unit": {"type": "string", "nonblank": true},
+    "per_share_unit": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "mapping_review_reference": {"type": "string", "nonblank": true},
+    "review_decision_log_reference": {"type": "string", "nonblank": true},
+    "quality_score_reference": {"type": "string", "nonblank": true},
+    "package_audit_reference": {"type": "string", "nonblank": true},
+    "fields": {"type": "array", "items": {"type": "object", "required": ["normalized_field", "approved_value", "approved_unit", "period", "candidate_id", "review_record_id", "reviewer_decision", "approval_timestamp", "source_tag", "source_locator", "transformation", "confidence"]}},
+    "excluded_records": {"type": "array"},
+    "limitations": {"type": "array"}
+  }
+}

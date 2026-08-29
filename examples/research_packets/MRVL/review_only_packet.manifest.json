@@ -1,0 +1,48 @@
+{
+  "packet_schema_version": "v0.3.11",
+  "packet_type": "real_company_review_only",
+  "pipeline_run_id": "pipeline-real_company_review_only-mrvl-2026-07-01T070057z0000",
+  "ticker": "MRVL",
+  "mode": "real_company_review_only",
+  "source_pipeline_manifest": "goodluck-stock-research/examples/pipeline_runs/MRVL/review_only/pipeline_run_manifest.json",
+  "audit_references": {
+    "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+    "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a",
+    "review_batch_id": "normalized-review-mrvl-a1aaa9bfaf36",
+    "promotion_id": "blocked_not_applicable",
+    "normalized_csv_manifest": "blocked_not_applicable",
+    "v02_dry_run_manifest": "blocked_not_applicable"
+  },
+  "blocked_steps": [
+    {
+      "step": "promotion",
+      "reason": "real_company_promotion_blocked"
+    },
+    {
+      "step": "normalized_csv",
+      "reason": "real_company_csv_generation_blocked"
+    },
+    {
+      "step": "v02_ratio_dry_run",
+      "reason": "real_company_dry_run_blocked"
+    }
+  ],
+  "candidate_fields": [
+    "operating_income",
+    "net_income",
+    "operating_cash_flow",
+    "capital_expenditure",
+    "cash_and_equivalents",
+    "total_debt",
+    "diluted_shares"
+  ],
+  "unresolved_fields": [
+    "revenue",
+    "gross_profit"
+  ],
+  "workbench_reference": "goodluck-stock-research/examples/pipeline_runs/MRVL/review_only/workbench/review_workbench.md",
+  "quality_reference": "goodluck-stock-research/examples/pipeline_runs/MRVL/review_only/quality/review_quality_score.json",
+  "suitable_for_promotion": false,
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-03T02:35:43+00:00"
+}

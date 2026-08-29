@@ -1,0 +1,23 @@
+{
+  "case": "mrvl_amendment_present",
+  "expected_identity": {
+    "ticker": "MRVL",
+    "cik": "0001835632",
+    "accession": "0001835632-26-000011",
+    "form": "10-K",
+    "filing_date": "2026-03-11",
+    "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a"
+  },
+  "artifacts": {
+    "review_batch": {
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "accession": "0001835632-26-000011",
+      "form": "10-K",
+      "filing_date": "2026-03-11",
+      "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a"
+    }
+  },
+  "amendment_present": true,
+  "claims_latest_effective": false
+}

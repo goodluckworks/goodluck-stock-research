@@ -1,0 +1,21 @@
+{
+  "dry_run_schema_version": "v0.6.0",
+  "ticker": "MRVL",
+  "input_csv": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_normalized_sandbox.csv",
+  "output_markdown": "goodluck-stock-research/examples/real_company_quarantine/MRVL/quarantined_ratio_dry_run.md",
+  "script": "ratio_calculator.py",
+  "run_status": "passed",
+  "quarantined": true,
+  "not_production_data": true,
+  "not_investment_data": true,
+  "not_company_fact_until_verified": true,
+  "manual_review_required": true,
+  "not_for_trading": true,
+  "not_for_public_release": true,
+  "no_recommendation": true,
+  "no_dcf": true,
+  "no_peer_comps": true,
+  "no_implied_expectations": true,
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-03T02:42:39+00:00"
+}

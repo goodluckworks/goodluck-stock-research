@@ -1,0 +1,9 @@
+{
+  "report_manifest_schema_version": "v0.9.0",
+  "ticker": "EXMP",
+  "packet_type": "fictional_full_report_packet",
+  "no_investment_conclusion": true,
+  "no_target_price": true,
+  "no_position_size": true,
+  "source_type": "fictional_sandbox"
+}

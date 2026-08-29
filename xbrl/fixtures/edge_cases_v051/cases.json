@@ -1,0 +1,56 @@
+{
+  "fixture_set": "edge_cases_v051",
+  "purpose": "Synthetic dashboard and pipeline boundary edge cases for v0.5.1.",
+  "cases": [
+    {
+      "case_id": "approved_review_missing_quality_score",
+      "expected_result": "fail",
+      "blocking_reason": "quality_score_missing"
+    },
+    {
+      "case_id": "quality_ready_missing_checklist",
+      "expected_result": "fail",
+      "blocking_reason": "checklist_missing"
+    },
+    {
+      "case_id": "partial_field_downstream_ratio_unavailable",
+      "expected_result": "pass_with_disclosure",
+      "blocking_reason": "ratio_unavailable_disclosed"
+    },
+    {
+      "case_id": "blocked_real_company_dry_run_attempt",
+      "expected_result": "blocked",
+      "blocking_reason": "real_company_dry_run_blocked"
+    },
+    {
+      "case_id": "blocked_real_company_csv_generation_attempt",
+      "expected_result": "blocked",
+      "blocking_reason": "real_company_csv_generation_blocked"
+    },
+    {
+      "case_id": "stale_mapping_version",
+      "expected_result": "fail",
+      "blocking_reason": "mapping_version_stale"
+    },
+    {
+      "case_id": "superseded_review_batch",
+      "expected_result": "fail",
+      "blocking_reason": "review_batch_superseded"
+    },
+    {
+      "case_id": "artifact_path_leak",
+      "expected_result": "fail",
+      "blocking_reason": "local_path_leak"
+    },
+    {
+      "case_id": "raw_filing_accidentally_present",
+      "expected_result": "fail",
+      "blocking_reason": "raw_full_filing_tracked"
+    },
+    {
+      "case_id": "forbidden_conclusion_phrase_in_packet",
+      "expected_result": "fail",
+      "blocking_reason": "forbidden_conclusion_phrase"
+    }
+  ]
+}

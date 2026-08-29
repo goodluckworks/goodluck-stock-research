@@ -1,0 +1,9 @@
+{
+  "scenario_output_not_recommendation": true,
+  "scenarios": [
+    "bear",
+    "base",
+    "bull"
+  ],
+  "ticker": "MRVL"
+}

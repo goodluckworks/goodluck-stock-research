@@ -1,0 +1,40 @@
+{
+  "schema_name": "review_batch_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "required": ["review_schema_version", "review_batch_id", "extraction_run_id", "snapshot_sha256", "mapping_version", "company", "ticker", "fictional_company", "created_at", "records"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "review_schema_version": {"type": "string", "nonblank": true},
+    "review_batch_id": {"type": "string", "nonblank": true},
+    "extraction_run_id": {"type": "string", "nonblank": true},
+    "raw_snapshot_id": {"type": "string"},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "batch_status": {"type": "string"},
+    "company": {"type": "string", "nonblank": true},
+    "ticker": {"type": "string", "nonblank": true},
+    "fictional_company": {"type": "boolean"},
+    "created_at": {"type": "string", "nonblank": true},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["review_record_id", "run_id", "company", "ticker", "cik", "accession", "form_type", "normalized_field", "candidate_id", "extracted_value", "unit", "period", "source_tag", "source_context", "source_locator", "transformation", "confidence", "warning_flags", "competing_candidate_ids", "reviewer_decision", "reviewer_id", "reviewer_notes", "approved_value", "approved_unit", "approval_timestamp", "prior_review_record_id", "review_checklist", "review_quality"],
+        "properties": {
+          "reviewer_decision": {"type": "string", "enum": ["approve", "adjust", "reject", "unresolved", "needs_more_evidence"]},
+          "approved_value": {"type": ["number", "string"]},
+          "approval_timestamp": {"type": "string", "nonblank": true},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "quality_score_reference": {"type": "string"},
+          "review_checklist": {"type": "object"},
+          "review_quality": {"type": "object"}
+        },
+        "conditional": [
+          {"if_field": "reviewer_decision", "if_in": ["approve", "adjust"], "then_not_equal": {"approved_value": "not_approved", "approved_unit": "not_approved", "approval_timestamp": "not_approved"}},
+          {"if_field": "reviewer_decision", "if_in": ["reject", "unresolved", "needs_more_evidence"], "then_equal": {"approved_value": "not_approved", "approved_unit": "not_approved", "approval_timestamp": "not_approved"}}
+        ]
+      }
+    }
+  }
+}

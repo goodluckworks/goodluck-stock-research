@@ -1,0 +1,67 @@
+{
+  "run_id": "xbrl-avgo-fy2025-1f3d337d3708",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "snapshot_sha256": "1f3d337d3708945b3aed545de6b3f180ba2bffa9c5c9173c652c992f46dfe350",
+  "review_status": "draft_extracted_unreviewed",
+  "candidates": [
+    {
+      "candidate_id": "avgo-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "extracted_value": 51000,
+      "source_value": "51000",
+      "unit": "USD millions",
+      "source_unit": "USD",
+      "period": "FY2025",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "AVGO-FY2025",
+      "period_type": "duration",
+      "dimensions": [],
+      "source_locator": "excerpt consolidated revenue line",
+      "source_fact_ids": [
+        "fact-002"
+      ],
+      "xbrl_decimals": "not_provided",
+      "xbrl_scale": "not_provided",
+      "transformation": "identity",
+      "confidence": "high",
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "competing_candidate_ids": [],
+      "review_status": "draft_extracted_unreviewed",
+      "taxonomy_relationship": {
+        "concept_label": "Revenue from contracts with customers, excluding assessed tax",
+        "concept_type": "standard",
+        "taxonomy_namespace": "us-gaap",
+        "closest_standard_concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "presentation_parent": "income_statement_revenue",
+        "presentation_children": [],
+        "calculation_parent": "not_applicable",
+        "calculation_children": [],
+        "anchor_concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "relationship_basis": "standard tag; fixture fallback fixture:ConsolidatedRevenue requires reviewed revenue relationship",
+        "relationship_confidence": "high",
+        "relationship_review_status": "reviewed",
+        "relationship_id": "relationship-revenue-v037",
+        "taxonomy_version": "fixture-v0.3.7",
+        "relationship_evidence_notes": "standard tag; fixture fallback fixture:ConsolidatedRevenue requires reviewed revenue relationship",
+        "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+      },
+      "review_checklist": {
+        "checklist_schema_version": "v0.3.7",
+        "candidate_id": "avgo-revenue-candidate-001",
+        "period_checked": false,
+        "unit_checked": false,
+        "context_checked": false,
+        "dimensions_checked": false,
+        "sign_checked": false,
+        "scale_checked": false,
+        "relationship_checked": false,
+        "competing_candidates_checked": true,
+        "prior_period_checked": false,
+        "materiality_checked": false,
+        "reviewer_notes_present": false
+      }
+    }
+  ]
+}

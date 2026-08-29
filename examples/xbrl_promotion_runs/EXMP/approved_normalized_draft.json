@@ -1,0 +1,125 @@
+{
+  "status": "fictional_approved_normalized_draft",
+  "promotion_id": "promotion-exmp-fy2025-05a7dc26d188",
+  "fictional_company": true,
+  "company": "Example Semiconductor Corp.",
+  "ticker": "EXMP",
+  "reporting_period": "FY2025",
+  "currency": "USD",
+  "amount_unit": "USD millions",
+  "per_share_unit": "USD/share",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "mapping_review_reference": "goodluck-stock-research/xbrl/mapping_review_fixtures/mapping_review_approved_v0_3_7.json",
+  "review_decision_log_reference": "goodluck-stock-research/examples/xbrl_review_decisions/EXMP/review_decision_log.json",
+  "quality_score_reference": "goodluck-stock-research/examples/xbrl_review_quality/EXMP/review_quality_score.json",
+  "package_audit_reference": "test-package-audit-reference",
+  "fields": [
+    {
+      "normalized_field": "revenue",
+      "approved_value": 1200,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-revenue-candidate-001",
+      "review_record_id": "review-exmp-revenue-candidate-001",
+      "reviewer_decision": "approve",
+      "approval_timestamp": "2026-06-29T01:10:00Z",
+      "source_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "source_locator": "EXMP income statement revenue",
+      "transformation": "identity",
+      "confidence": "high"
+    },
+    {
+      "normalized_field": "gross_profit",
+      "approved_value": 720,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-gross_profit-candidate-001",
+      "review_record_id": "review-exmp-gross_profit-candidate-001",
+      "reviewer_decision": "approve",
+      "approval_timestamp": "2026-06-29T01:10:00Z",
+      "source_tag": "us-gaap:GrossProfit",
+      "source_locator": "EXMP income statement gross profit",
+      "transformation": "identity",
+      "confidence": "high"
+    },
+    {
+      "normalized_field": "operating_income",
+      "approved_value": 310,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-operating_income-candidate-001",
+      "review_record_id": "review-exmp-operating_income-candidate-001",
+      "reviewer_decision": "approve",
+      "approval_timestamp": "2026-06-29T01:10:00Z",
+      "source_tag": "us-gaap:OperatingIncomeLoss",
+      "source_locator": "EXMP income statement operating income",
+      "transformation": "identity",
+      "confidence": "high"
+    },
+    {
+      "normalized_field": "operating_cash_flow",
+      "approved_value": 330,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-operating_cash_flow-candidate-001",
+      "review_record_id": "review-exmp-operating_cash_flow-candidate-001",
+      "reviewer_decision": "approve",
+      "approval_timestamp": "2026-06-29T01:10:00Z",
+      "source_tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "source_locator": "EXMP cash flow operating activities",
+      "transformation": "identity",
+      "confidence": "high"
+    },
+    {
+      "normalized_field": "capital_expenditure",
+      "approved_value": 92.0,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-capital_expenditure-candidate-001",
+      "review_record_id": "review-exmp-capital_expenditure-candidate-001",
+      "reviewer_decision": "adjust",
+      "approval_timestamp": "2026-06-29T01:14:00Z",
+      "source_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "source_locator": "EXMP cash flow capex",
+      "transformation": "absolute_value_to_positive_outflow",
+      "confidence": "high"
+    },
+    {
+      "normalized_field": "cash_and_equivalents",
+      "approved_value": 410,
+      "approved_unit": "USD millions",
+      "period": "FY2025",
+      "candidate_id": "exmp-cash_and_equivalents-candidate-001",
+      "review_record_id": "review-exmp-cash_and_equivalents-candidate-001",
+      "reviewer_decision": "approve",
+      "approval_timestamp": "2026-06-29T01:10:00Z",
+      "source_tag": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "source_locator": "EXMP balance sheet cash",
+      "transformation": "identity",
+      "confidence": "high"
+    }
+  ],
+  "excluded_records": [
+    {
+      "candidate_id": "exmp-net_income-candidate-001",
+      "normalized_field": "net_income",
+      "decision": "reject"
+    },
+    {
+      "candidate_id": "exmp-total_debt-candidate-001",
+      "normalized_field": "total_debt",
+      "decision": "unresolved"
+    },
+    {
+      "candidate_id": "exmp-diluted_shares-candidate-001",
+      "normalized_field": "diluted_shares",
+      "decision": "needs_more_evidence"
+    }
+  ],
+  "limitations": [
+    "Fictional fixture promotion only.",
+    "Not a v0.2.x input file.",
+    "No calculation or investment conclusion generated."
+  ]
+}

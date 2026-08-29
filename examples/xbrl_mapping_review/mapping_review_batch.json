@@ -1,0 +1,123 @@
+{
+  "mapping_review_schema_version": "v0.3.7",
+  "mapping_review_batch_id": "mapping-review-us-gaap-core-v037-approved-001",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "mapping_status": "approved",
+  "created_at": "2026-06-29T09:00:00Z",
+  "reviewer_id": "fixture-mapping-reviewer",
+  "records": [
+    {
+      "mapping_review_record_id": "mapping-review-revenue-v037-001",
+      "mapping_id": "revenue-v037",
+      "normalized_field": "revenue",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only consolidated revenue mapping has exact period, unit and no-dimension rules.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:01:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only consolidated revenue mapping has exact period, unit and no-dimension rules. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-gross-profit-v037-001",
+      "mapping_id": "gross-profit-v037",
+      "normalized_field": "gross_profit",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only gross profit mapping requires explicit standard tag and leaves missing fields unresolved.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:02:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only gross profit mapping requires explicit standard tag and leaves missing fields unresolved. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-operating-income-v037-001",
+      "mapping_id": "operating-income-v037",
+      "normalized_field": "operating_income",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only operating income mapping requires standard tag, duration period and exact unit.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:03:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only operating income mapping requires standard tag, duration period and exact unit. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-net-income-v037-001",
+      "mapping_id": "net-income-v037",
+      "normalized_field": "net_income",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only net income mapping retains attribution review warnings and does not normalize special items.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:04:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only net income mapping retains attribution review warnings and does not normalize special items. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-ocf-v037-001",
+      "mapping_id": "operating-cash-flow-v037",
+      "normalized_field": "operating_cash_flow",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only operating cash flow mapping requires operating activities total.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:05:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only operating cash flow mapping requires operating activities total. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-capex-v037-001",
+      "mapping_id": "capital-expenditure-v037",
+      "normalized_field": "capital_expenditure",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only capex mapping preserves source sign and records positive-outflow transformation.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:06:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only capex mapping preserves source sign and records positive-outflow transformation. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-cash-v037-001",
+      "mapping_id": "cash-v037",
+      "normalized_field": "cash_and_equivalents",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only cash mapping is cash-only and does not include restricted cash or investments.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:07:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only cash mapping is cash-only and does not include restricted cash or investments. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-debt-v037-001",
+      "mapping_id": "total-debt-v037",
+      "normalized_field": "total_debt",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only debt mapping blocks total plus components double counting.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:08:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only debt mapping blocks total plus components double counting. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    },
+    {
+      "mapping_review_record_id": "mapping-review-shares-v037-001",
+      "mapping_id": "diluted-shares-v037",
+      "normalized_field": "diluted_shares",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only diluted shares mapping requires exact duration and split-adjusted basis.",
+      "reviewer_notes": "Approved for v0.3.7 fixture-only review ergonomics and EXMP promotion tests only.",
+      "review_timestamp": "2026-06-29T09:09:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "Fixture-only diluted shares mapping requires exact duration and split-adjusted basis. Relationship metadata reviewed for v0.3.7 fixture-only use."
+    }
+  ],
+  "review_passed": true,
+  "source_mapping_file": "goodluck-stock-research/xbrl/mappings/us_gaap_core_v0_3_7.json",
+  "source_review_file": "goodluck-stock-research/xbrl/mapping_review_fixtures/mapping_review_approved_v0_3_7.json",
+  "generated_at": "2026-06-29T09:09:44+00:00",
+  "errors": []
+}

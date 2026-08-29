@@ -1,0 +1,61 @@
+{
+  "run_id": "xbrl-mrvl-fy2026-29b488050b1b",
+  "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "records": [
+    {
+      "record_id": "provenance-mrvl-operating_income-candidate-001",
+      "candidate_id": "mrvl-operating_income-candidate-001",
+      "normalized_field": "operating_income",
+      "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-003"
+      ],
+      "source_locator": "excerpt operating loss line",
+      "concept_qname": "us-gaap:OperatingIncomeLoss",
+      "context_id": "MRVL-FY2026",
+      "period": "FY2026",
+      "unit": "USD millions",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    },
+    {
+      "record_id": "provenance-mrvl-operating_cash_flow-candidate-001",
+      "candidate_id": "mrvl-operating_cash_flow-candidate-001",
+      "normalized_field": "operating_cash_flow",
+      "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-004"
+      ],
+      "source_locator": "excerpt operating cash flow line",
+      "concept_qname": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "context_id": "MRVL-FY2026",
+      "period": "FY2026",
+      "unit": "USD millions",
+      "transformation": "identity",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    },
+    {
+      "record_id": "provenance-mrvl-capital_expenditure-candidate-001",
+      "candidate_id": "mrvl-capital_expenditure-candidate-001",
+      "normalized_field": "capital_expenditure",
+      "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+      "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+      "source_fact_ids": [
+        "fact-005"
+      ],
+      "source_locator": "excerpt capex line",
+      "concept_qname": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "context_id": "MRVL-FY2026",
+      "period": "FY2026",
+      "unit": "USD millions",
+      "transformation": "absolute_value_to_positive_outflow",
+      "confidence": "high",
+      "review_status": "draft_extracted_unreviewed"
+    }
+  ]
+}

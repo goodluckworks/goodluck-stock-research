@@ -1,0 +1,21 @@
+{
+  "case": "mrvl_accession_mismatch",
+  "expected_identity": {
+    "ticker": "MRVL",
+    "cik": "0001835632",
+    "accession": "0001835632-26-000011",
+    "form": "10-K",
+    "filing_date": "2026-03-11",
+    "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a"
+  },
+  "artifacts": {
+    "quality_score": {
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "accession": "0001835632-26-999999",
+      "form": "10-K",
+      "filing_date": "2026-03-11",
+      "snapshot_sha256": "a1aaa9bfaf3605ceb1dbce7ae810c87044f6e651b96e94c60c27043205bedd6a"
+    }
+  }
+}

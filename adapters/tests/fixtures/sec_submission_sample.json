@@ -1,0 +1,15 @@
+{
+  "cik": "0001835632",
+  "name": "Marvell Technology, Inc.",
+  "tickers": ["MRVL"],
+  "exchanges": ["Nasdaq"],
+  "filings": {
+    "recent": {
+      "accessionNumber": ["0001835632-26-000011"],
+      "filingDate": ["2026-03-11"],
+      "form": ["10-K"],
+      "primaryDocument": ["mrvl-20260131.htm"]
+    }
+  },
+  "fixture_note": "Artificial compact submissions fixture; not fetched live."
+}

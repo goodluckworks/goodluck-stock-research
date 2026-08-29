@@ -1,0 +1,15 @@
+{
+  "snapshot_id": "raw-mrvl-10-k-2026-03-11-0f2b300b0325",
+  "adapter_name": "local_official_filing_adapter",
+  "adapter_version": "v0.3.1",
+  "input_file": "goodluck-stock-research/adapters/tests/fixtures/sample_mrvl_filing_excerpt.html",
+  "raw_snapshot_path": "goodluck-stock-research/examples/adapter_runs/MRVL/raw/raw-mrvl-10-k-2026-03-11-0f2b300b0325.html",
+  "sha256": "0f2b300b032570b225d183f4d77d921986e2e2ecc826396b7cfa1c5990a230f5",
+  "created_at": "2026-06-25T07:27:41+00:00",
+  "source_url": "local-fixture://sample_mrvl_filing_excerpt.html",
+  "immutable": true,
+  "overwrite_used": false,
+  "content_type": "text/html",
+  "byte_size": 345,
+  "notes": "Short artificial fixture for local evidence packaging validation."
+}

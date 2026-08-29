@@ -1,0 +1,17 @@
+{
+  "MRVL": {
+    "input": "mrvl_10k_excerpt_inline_like.html",
+    "expected": ["revenue multiple_candidates", "gross_profit missing_field", "ocf candidate", "capex candidate"],
+    "promotion_allowed": false
+  },
+  "NVDA": {
+    "input": "nvda_10q_excerpt_inline_like.html",
+    "expected": ["dimensional revenue rejected", "cash candidate", "marketable securities warning/rejection", "split-adjusted diluted shares candidate"],
+    "promotion_allowed": false
+  },
+  "AVGO": {
+    "input": "avgo_10k_excerpt_inline_like.html",
+    "expected": ["segment revenue rejected", "debt total plus components unresolved", "acquisition-driven presentation drill"],
+    "promotion_allowed": false
+  }
+}

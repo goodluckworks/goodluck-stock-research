@@ -1,0 +1,100 @@
+{
+  "mapping_review_schema_version": "v0.3.6",
+  "mapping_review_batch_id": "mapping-review-us-gaap-core-v034-approved-001",
+  "mapping_version": "us-gaap-core-v0.3.4-fixture-1",
+  "mapping_status": "approved",
+  "created_at": "2026-06-29T00:00:00Z",
+  "reviewer_id": "fixture-mapping-reviewer",
+  "records": [
+    {
+      "mapping_review_record_id": "mapping-review-revenue-001",
+      "mapping_id": "revenue-v034",
+      "normalized_field": "revenue",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only consolidated revenue mapping has exact period, unit and no-dimension rules.",
+      "reviewer_notes": "Approved for v0.3.6 fictional/offline fixture promotion tests only.",
+      "review_timestamp": "2026-06-29T00:01:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-gross-profit-001",
+      "mapping_id": "gross-profit-v034",
+      "normalized_field": "gross_profit",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only gross profit mapping requires explicit standard tag and leaves missing fields unresolved.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:02:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-operating-income-001",
+      "mapping_id": "operating-income-v034",
+      "normalized_field": "operating_income",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only operating income mapping requires standard tag, duration period and exact unit.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:03:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-net-income-001",
+      "mapping_id": "net-income-v034",
+      "normalized_field": "net_income",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only net income mapping retains attribution review warnings and does not normalize special items.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:04:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-ocf-001",
+      "mapping_id": "operating-cash-flow-v034",
+      "normalized_field": "operating_cash_flow",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only operating cash flow mapping requires operating activities total.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:05:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-capex-001",
+      "mapping_id": "capital-expenditure-v034",
+      "normalized_field": "capital_expenditure",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only capex mapping preserves source sign and records positive-outflow transformation.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:06:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-cash-001",
+      "mapping_id": "cash-v034",
+      "normalized_field": "cash_and_equivalents",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only cash mapping is cash-only and does not include restricted cash or investments.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:07:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-debt-001",
+      "mapping_id": "total-debt-v034",
+      "normalized_field": "total_debt",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only debt mapping blocks total plus components double counting.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:08:00Z"
+    },
+    {
+      "mapping_review_record_id": "mapping-review-shares-001",
+      "mapping_id": "diluted-shares-v034",
+      "normalized_field": "diluted_shares",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "Fixture-only diluted shares mapping requires exact duration and split-adjusted basis.",
+      "reviewer_notes": "Approved for fixture-only tests.",
+      "review_timestamp": "2026-06-29T00:09:00Z"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "ticker": "MRVL",
+    "result": "pass",
+    "reason": "controlled quarantine manifest present",
+    "tracked_output": "goodluck-stock-research/examples/real_company_quarantine/MRVL"
+  },
+  {
+    "ticker": "NVDA",
+    "result": "blocked",
+    "reason": "insufficient explicit quarantine gate data; no tracked output created",
+    "tracked_output": "none"
+  },
+  {
+    "ticker": "AVGO",
+    "result": "blocked",
+    "reason": "insufficient explicit quarantine gate data; no tracked output created",
+    "tracked_output": "none"
+  }
+]

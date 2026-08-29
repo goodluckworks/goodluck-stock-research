@@ -1,0 +1,35 @@
+{
+  "quality_schema_version": "v0.3.7",
+  "quality_package_id": "review-quality-avgo-1f3d337d3708",
+  "extraction_run_id": "xbrl-avgo-fy2025-1f3d337d3708",
+  "snapshot_sha256": "1f3d337d3708945b3aed545de6b3f180ba2bffa9c5c9173c652c992f46dfe350",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "company": "Broadcom Inc.",
+  "ticker": "AVGO",
+  "fictional_company": false,
+  "created_at": "2026-06-29T09:23:05+00:00",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_real_excerpt_drills/AVGO/extraction/extraction_candidates.json",
+  "provenance_file": "goodluck-stock-research/examples/xbrl_real_excerpt_drills/AVGO/extraction/field_provenance.json",
+  "records": [
+    {
+      "candidate_id": "avgo-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    }
+  ],
+  "boundary": [
+    "Scores are advisory only.",
+    "Scores do not approve fields.",
+    "Real-company-shaped fixtures remain unapproved and unpromoted."
+  ]
+}

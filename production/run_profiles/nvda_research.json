@@ -1,0 +1,6 @@
+{
+  "ticker": "NVDA",
+  "mode": "fixture",
+  "sec_only": true,
+  "output": "goodluck-stock-research/examples/production_research/NVDA"
+}

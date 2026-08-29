@@ -1,0 +1,21 @@
+{
+  "schema_name": "research_report_manifest_schema",
+  "schema_version": "v0.9.0",
+  "packet_types": [
+    "fictional_full_report_packet",
+    "real_company_quarantine_report_packet",
+    "real_company_review_only_packet"
+  ],
+  "required_flags": [
+    "no_investment_conclusion",
+    "no_target_price",
+    "no_position_size"
+  ],
+  "forbidden_fields": [
+    "target_price",
+    "recommendation",
+    "position_size",
+    "portfolio_action",
+    "research_status"
+  ]
+}

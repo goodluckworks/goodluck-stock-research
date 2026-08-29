@@ -1,0 +1,139 @@
+{
+  "quality_schema_version": "v0.3.7",
+  "quality_package_id": "review-quality-exmp-05a7dc26d188",
+  "extraction_run_id": "xbrl-exmp-fy2025-05a7dc26d188",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "company": "Example Semiconductor Corp.",
+  "ticker": "EXMP",
+  "fictional_company": true,
+  "created_at": "2026-06-29T09:22:18+00:00",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/EXMP/extraction_candidates.json",
+  "provenance_file": "goodluck-stock-research/examples/xbrl_extraction_runs/EXMP/field_provenance.json",
+  "records": [
+    {
+      "candidate_id": "exmp-revenue-candidate-001",
+      "normalized_field": "revenue",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-gross_profit-candidate-001",
+      "normalized_field": "gross_profit",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-operating_income-candidate-001",
+      "normalized_field": "operating_income",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-net_income-candidate-001",
+      "normalized_field": "net_income",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-operating_cash_flow-candidate-001",
+      "normalized_field": "operating_cash_flow",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-capital_expenditure-candidate-001",
+      "normalized_field": "capital_expenditure",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [
+        "source_sign_preserved_in_source_value"
+      ],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-cash_and_equivalents-candidate-001",
+      "normalized_field": "cash_and_equivalents",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-total_debt-candidate-001",
+      "normalized_field": "total_debt",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "exmp-diluted_shares-candidate-001",
+      "normalized_field": "diluted_shares",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 100.0,
+      "approval_readiness": "ready",
+      "blocking_issues": [],
+      "warning_flags": [],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    }
+  ],
+  "boundary": [
+    "Scores are advisory only.",
+    "Scores do not approve fields.",
+    "Real-company-shaped fixtures remain unapproved and unpromoted."
+  ]
+}

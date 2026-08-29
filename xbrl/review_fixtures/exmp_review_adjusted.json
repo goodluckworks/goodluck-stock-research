@@ -1,0 +1,41 @@
+{
+  "review_schema_version": "v0.3.7-fixture-1",
+  "review_batch_id": "exmp-review-adjusted-001",
+  "extraction_run_id": "xbrl-exmp-fy2025-05a7dc26d188",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "company": "Example Semiconductor Corp.",
+  "ticker": "EXMP",
+  "fictional_company": true,
+  "created_at": "2026-06-25T12:00:00Z",
+  "records": [
+    {
+      "review_record_id": "review-exmp-capex-adjusted-only",
+      "run_id": "xbrl-exmp-fy2025-05a7dc26d188",
+      "company": "Example Semiconductor Corp.",
+      "ticker": "EXMP",
+      "cik": "0000000000",
+      "accession": "fictional-exmp-001",
+      "form_type": "10-K",
+      "normalized_field": "capital_expenditure",
+      "candidate_id": "exmp-capital_expenditure-candidate-001",
+      "extracted_value": 90,
+      "unit": "USD millions",
+      "period": "FY2025",
+      "source_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "source_context": "EXMP-FY2025",
+      "source_locator": "EXMP cash flow capex",
+      "transformation": "absolute_value_to_positive_outflow",
+      "confidence": "high",
+      "warning_flags": ["source_sign_preserved_in_source_value"],
+      "competing_candidate_ids": [],
+      "reviewer_decision": "adjust",
+      "reviewer_id": "fictional-reviewer",
+      "reviewer_notes": "Fictional adjustment-only validation fixture.",
+      "approved_value": 92,
+      "approved_unit": "USD millions",
+      "approval_timestamp": "2026-06-25T12:14:00Z",
+      "prior_review_record_id": "not_applicable"
+    }
+  ]
+}

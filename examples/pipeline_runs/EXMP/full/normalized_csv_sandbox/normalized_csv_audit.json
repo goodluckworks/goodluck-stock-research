@@ -1,0 +1,126 @@
+{
+  "audit_schema_version": "v0.3.8",
+  "csv_path": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox/normalized_financials_sandbox.csv",
+  "audit_path": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox/normalized_csv_audit.json",
+  "field_audit_records": [
+    {
+      "normalized_field": "capital_expenditure",
+      "csv_column": "capital_expenditure",
+      "csv_value": "92.0",
+      "candidate_id": "exmp-capital_expenditure-candidate-001",
+      "review_record_id": "review-exmp-capital_expenditure-candidate-001",
+      "reviewer_decision": "adjust",
+      "approved_value": 92.0,
+      "transformation": "absolute_value_to_positive_outflow",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-capital_expenditure-candidate-001",
+      "source_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "source_locator": "EXMP cash flow capex",
+      "source_fact_ids": [
+        "fact-006"
+      ]
+    },
+    {
+      "normalized_field": "cash_and_equivalents",
+      "csv_column": "cash_and_equivalents",
+      "csv_value": "410",
+      "candidate_id": "exmp-cash_and_equivalents-candidate-001",
+      "review_record_id": "review-exmp-cash_and_equivalents-candidate-001",
+      "reviewer_decision": "approve",
+      "approved_value": 410,
+      "transformation": "identity",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-cash_and_equivalents-candidate-001",
+      "source_tag": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "source_locator": "EXMP balance sheet cash",
+      "source_fact_ids": [
+        "fact-007"
+      ]
+    },
+    {
+      "normalized_field": "gross_profit",
+      "csv_column": "gross_profit",
+      "csv_value": "720",
+      "candidate_id": "exmp-gross_profit-candidate-001",
+      "review_record_id": "review-exmp-gross_profit-candidate-001",
+      "reviewer_decision": "approve",
+      "approved_value": 720,
+      "transformation": "identity",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-gross_profit-candidate-001",
+      "source_tag": "us-gaap:GrossProfit",
+      "source_locator": "EXMP income statement gross profit",
+      "source_fact_ids": [
+        "fact-002"
+      ]
+    },
+    {
+      "normalized_field": "operating_cash_flow",
+      "csv_column": "operating_cash_flow",
+      "csv_value": "330",
+      "candidate_id": "exmp-operating_cash_flow-candidate-001",
+      "review_record_id": "review-exmp-operating_cash_flow-candidate-001",
+      "reviewer_decision": "approve",
+      "approved_value": 330,
+      "transformation": "identity",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-operating_cash_flow-candidate-001",
+      "source_tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "source_locator": "EXMP cash flow operating activities",
+      "source_fact_ids": [
+        "fact-005"
+      ]
+    },
+    {
+      "normalized_field": "operating_income",
+      "csv_column": "operating_income",
+      "csv_value": "310",
+      "candidate_id": "exmp-operating_income-candidate-001",
+      "review_record_id": "review-exmp-operating_income-candidate-001",
+      "reviewer_decision": "approve",
+      "approved_value": 310,
+      "transformation": "identity",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-operating_income-candidate-001",
+      "source_tag": "us-gaap:OperatingIncomeLoss",
+      "source_locator": "EXMP income statement operating income",
+      "source_fact_ids": [
+        "fact-003"
+      ]
+    },
+    {
+      "normalized_field": "revenue",
+      "csv_column": "revenue",
+      "csv_value": "1200",
+      "candidate_id": "exmp-revenue-candidate-001",
+      "review_record_id": "review-exmp-revenue-candidate-001",
+      "reviewer_decision": "approve",
+      "approved_value": 1200,
+      "transformation": "identity",
+      "unit": "USD millions",
+      "period": "FY2025",
+      "confidence": "high",
+      "provenance_reference": "provenance-exmp-revenue-candidate-001",
+      "source_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "source_locator": "EXMP income statement revenue",
+      "source_fact_ids": [
+        "fact-001"
+      ]
+    }
+  ],
+  "source_review_batch_id": "normalized-review-exmp-05a7dc26d188",
+  "source_promotion_id": "promotion-exmp-fy2025-05a7dc26d188",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "sandbox_status": "fictional_sandbox_not_investment_data"
+}

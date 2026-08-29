@@ -1,0 +1,76 @@
+{
+  "run_id": "xbrl-mrvl-fy2026-29b488050b1b",
+  "unresolved_fields": [
+    {
+      "normalized_field": "revenue",
+      "reason_code": "multiple_candidates",
+      "reason": "Multiple eligible facts remain; first-match selection is prohibited.",
+      "source_fact_ids": [
+        "fact-001",
+        "fact-002"
+      ],
+      "rejected_facts": [],
+      "competing_candidate_ids": [
+        "mrvl-revenue-competing-001",
+        "mrvl-revenue-competing-002"
+      ],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "gross_profit",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "net_income",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "cash_and_equivalents",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "total_debt",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "diluted_shares",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    }
+  ],
+  "rejected_facts": [],
+  "warnings": [
+    "Fixture-oriented prototype; not production iXBRL coverage.",
+    "All candidates require human review."
+  ]
+}

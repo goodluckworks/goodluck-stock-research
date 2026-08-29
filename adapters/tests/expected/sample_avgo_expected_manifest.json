@@ -1,0 +1,12 @@
+{
+  "fixture": "sample_avgo_filing_excerpt.html",
+  "company": "Broadcom Inc.",
+  "ticker": "AVGO",
+  "form_type": "10-K",
+  "filing_date": "2025-12-18",
+  "reporting_period": "FY2025",
+  "fiscal_year": "2025",
+  "fiscal_quarter": "FY",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/example/avgo-fixture.htm",
+  "sha256": "282eb9790d7da2785a482bb0c864db1944f93bac2234a76a83adb93a4acb44a5"
+}

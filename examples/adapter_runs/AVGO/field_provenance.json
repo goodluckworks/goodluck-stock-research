@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "field_name": "raw_filing_text",
+      "value_status": "raw_snapshot_available",
+      "source_id": "avgo-10-k-2025-12-18-282eb9790d7d",
+      "source_field_name": "full filing text / local excerpt",
+      "source_locator": "goodluck-stock-research/examples/adapter_runs/AVGO/raw/raw-avgo-10-k-2025-12-18-282eb9790d7d.html",
+      "transformation": "raw file copied and checksum recorded",
+      "confidence": "high",
+      "notes": "Evidence packaging only; no financial field was inferred from the filing text."
+    }
+  ]
+}

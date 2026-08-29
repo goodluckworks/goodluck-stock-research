@@ -1,0 +1,33 @@
+{
+  "schema_name": "review_quality_score_schema",
+  "schema_version": "v0.3.7",
+  "root_type": "object",
+  "required": ["quality_schema_version", "quality_package_id", "extraction_run_id", "snapshot_sha256", "mapping_version", "created_at", "records"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "quality_schema_version": {"type": "string", "nonblank": true},
+    "quality_package_id": {"type": "string", "nonblank": true},
+    "extraction_run_id": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "created_at": {"type": "string", "nonblank": true},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "normalized_field", "completeness_score", "provenance_score", "relationship_score", "ambiguity_score", "approval_readiness", "blocking_issues"],
+        "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+        "properties": {
+          "candidate_id": {"type": "string", "nonblank": true},
+          "normalized_field": {"type": "string", "nonblank": true},
+          "completeness_score": {"type": "number", "finite": true},
+          "provenance_score": {"type": "number", "finite": true},
+          "relationship_score": {"type": "number", "finite": true},
+          "ambiguity_score": {"type": "number", "finite": true},
+          "approval_readiness": {"type": "string", "enum": ["ready", "needs_review", "not_ready"]},
+          "blocking_issues": {"type": "array"}
+        }
+      }
+    }
+  }
+}

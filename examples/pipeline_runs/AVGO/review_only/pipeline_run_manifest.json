@@ -1,0 +1,72 @@
+{
+  "pipeline_schema_version": "v0.3.10",
+  "pipeline_run_id": "pipeline-real_company_review_only-avgo-2026-07-01T070058z0000",
+  "mode": "real_company_review_only",
+  "ticker": "AVGO",
+  "company": "Broadcom Inc.",
+  "fixture_data_status": "synthetic_or_excerpt_review_only",
+  "run_steps": [
+    {
+      "step": "candidate",
+      "status": "review_only_copied_local_fixture"
+    },
+    {
+      "step": "workbench",
+      "status": "review_only_copied_local_fixture"
+    },
+    {
+      "step": "quality",
+      "status": "review_only_copied_local_fixture"
+    },
+    {
+      "step": "review",
+      "status": "review_only_copied_local_fixture"
+    },
+    {
+      "step": "blocked_steps_report",
+      "status": "passed"
+    }
+  ],
+  "input_paths": {
+    "candidate": "goodluck-stock-research/examples/xbrl_extraction_runs/AVGO",
+    "workbench": "goodluck-stock-research/examples/xbrl_review_workbenches/AVGO",
+    "quality": "goodluck-stock-research/examples/xbrl_review_quality/AVGO",
+    "review": "goodluck-stock-research/examples/xbrl_review_decisions/AVGO"
+  },
+  "output_paths": {
+    "candidate": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only/candidate",
+    "workbench": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only/workbench",
+    "quality": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only/quality",
+    "review": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only/review",
+    "blocked_steps_report": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only/blocked_steps_report.md"
+  },
+  "blocked_steps": [
+    {
+      "step": "promotion",
+      "reason": "real_company_promotion_blocked"
+    },
+    {
+      "step": "normalized_csv",
+      "reason": "real_company_csv_generation_blocked"
+    },
+    {
+      "step": "v02_ratio_dry_run",
+      "reason": "real_company_dry_run_blocked"
+    }
+  ],
+  "warnings": [
+    "Real-company-shaped fixture remains draft/review-only.",
+    "No promotion, no normalized CSV and no v0.2.x dry-run were generated."
+  ],
+  "audit_references": {
+    "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+    "snapshot_sha256": "7dc8a9c4d00afce413507447e50bf457f5ece27e71a8c15a2afb18f27daf2df3",
+    "review_batch_id": "normalized-review-avgo-7dc8a9c4d00a",
+    "promotion_id": "blocked_not_applicable",
+    "normalized_csv_manifest": "blocked_not_applicable",
+    "v02_dry_run_manifest": "blocked_not_applicable"
+  },
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-01T07:00:58+00:00",
+  "output_dir": "goodluck-stock-research/examples/pipeline_runs/AVGO/review_only"
+}

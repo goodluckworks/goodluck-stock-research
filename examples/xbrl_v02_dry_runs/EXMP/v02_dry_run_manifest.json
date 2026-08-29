@@ -1,0 +1,100 @@
+{
+  "dry_run_id": "v02-ratio-sandbox-exmp-05a7dc26d188",
+  "input_csv": "goodluck-stock-research/examples/xbrl_normalized_sandbox/EXMP/normalized_financials_sandbox.csv",
+  "input_manifest": "goodluck-stock-research/examples/xbrl_normalized_sandbox/EXMP/normalized_csv_manifest.json",
+  "output_markdown": "goodluck-stock-research/examples/xbrl_v02_dry_runs/EXMP/ratio_output_sandbox.md",
+  "script": "ratio_calculator.py",
+  "run_status": "passed",
+  "sandbox_status": "fictional_sandbox_not_investment_data",
+  "no_investment_conclusion": true,
+  "created_at": "2026-07-01T06:56:49+00:00",
+  "source_promotion_id": "promotion-exmp-fy2025-05a7dc26d188",
+  "source_review_batch_id": "normalized-review-exmp-05a7dc26d188",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "available_ratios": [
+    "gross_margin",
+    "operating_margin",
+    "operating_cash_flow_margin",
+    "free_cash_flow",
+    "fcf_margin"
+  ],
+  "unavailable_ratios": [
+    {
+      "ratio": "raw_net_margin",
+      "missing_inputs": [
+        "net_income"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "raw_roe",
+      "missing_inputs": [
+        "net_income",
+        "shareholders_equity"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "raw_roa",
+      "missing_inputs": [
+        "net_income",
+        "total_assets"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "net_debt",
+      "missing_inputs": [
+        "total_debt"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "debt_to_equity",
+      "missing_inputs": [
+        "total_debt",
+        "shareholders_equity"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "current_ratio",
+      "missing_inputs": [
+        "current_assets",
+        "current_liabilities"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "sbc_to_revenue",
+      "missing_inputs": [
+        "stock_based_compensation"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "ar_to_revenue",
+      "missing_inputs": [
+        "accounts_receivable"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "inventory_to_revenue",
+      "missing_inputs": [
+        "inventory"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    },
+    {
+      "ratio": "diluted_shares_trend",
+      "missing_inputs": [
+        "shares_diluted"
+      ],
+      "reason": "missing_or_unresolved_inputs"
+    }
+  ],
+  "missing_inputs": [],
+  "overwrite_used": true
+}

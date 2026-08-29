@@ -1,0 +1,6 @@
+{
+  "ticker": "MRVL",
+  "mode": "fixture",
+  "sec_only": true,
+  "output": "goodluck-stock-research/examples/production_research/MRVL"
+}

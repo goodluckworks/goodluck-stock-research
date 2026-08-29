@@ -1,0 +1,22 @@
+{
+  "broker_trading_order_workflow": "none",
+  "caveats": [
+    "Fixture/local workflow output; not personalized advice or trading instruction."
+  ],
+  "created_at": "2026-07-07T00:25:07.371248+00:00",
+  "outputs": {
+    "data_quality_report": "data_quality_report.md",
+    "filing_identity": "filing_identity.json",
+    "market_data_manifest": "market_data_manifest.json",
+    "normalized_financials": "normalized_financials/normalized_statement.json",
+    "research_conclusion": "research_conclusion.json",
+    "research_report_draft": "research_report_draft.md",
+    "source_manifest": "source_manifest.json",
+    "valuation_scenarios": "valuation_scenarios.json",
+    "workflow_audit_report": "workflow_audit_report.md"
+  },
+  "personalized_advice": "none",
+  "status": "completed_internal_draft",
+  "ticker": "MRVL",
+  "workflow_schema_version": "v2.6.0"
+}

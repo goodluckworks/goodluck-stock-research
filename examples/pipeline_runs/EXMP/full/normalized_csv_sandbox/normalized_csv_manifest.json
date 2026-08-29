@@ -1,0 +1,200 @@
+{
+  "csv_schema_version": "v0.3.8",
+  "company": "Example Semiconductor Corp.",
+  "ticker": "EXMP",
+  "fixture_data_status": "fictional_sample",
+  "sandbox_status": "fictional_sandbox_not_investment_data",
+  "period": "FY2025",
+  "currency": "USD",
+  "amount_unit": "USD millions",
+  "per_share_unit": "USD/share",
+  "populated_fields": [
+    "capital_expenditure",
+    "cash_and_equivalents",
+    "gross_profit",
+    "operating_cash_flow",
+    "operating_income",
+    "revenue"
+  ],
+  "omitted_fields": [
+    "accounts_receivable",
+    "acquisition_accounting_notes",
+    "acquisition_related_amortization",
+    "acquisition_related_costs",
+    "cash_and_short_term_investments",
+    "current_assets",
+    "current_liabilities",
+    "goodwill",
+    "intangible_assets",
+    "inventory",
+    "net_income",
+    "normalized_eps",
+    "normalized_net_income",
+    "normalized_operating_income",
+    "restructuring_and_integration_costs",
+    "shareholders_equity",
+    "shares_diluted",
+    "short_term_investments",
+    "stock_based_compensation",
+    "total_assets"
+  ],
+  "unresolved_fields": [
+    "total_debt"
+  ],
+  "blocked_fields": [],
+  "field_statuses": {
+    "period": "not_required_for_this_script",
+    "currency": "not_required_for_this_script",
+    "amount_unit": "not_required_for_this_script",
+    "per_share_unit": "not_required_for_this_script",
+    "basis": "not_required_for_this_script",
+    "revenue": "approved",
+    "gross_profit": "approved",
+    "operating_income": "approved",
+    "net_income": "rejected",
+    "operating_cash_flow": "approved",
+    "capital_expenditure": "adjusted",
+    "cash_and_equivalents": "approved",
+    "total_debt": "unresolved",
+    "total_assets": "missing",
+    "shareholders_equity": "missing",
+    "shares_diluted": "missing",
+    "stock_based_compensation": "missing",
+    "accounts_receivable": "missing",
+    "inventory": "missing",
+    "current_assets": "missing",
+    "current_liabilities": "missing",
+    "source": "not_required_for_this_script",
+    "source_date": "not_required_for_this_script",
+    "source_status": "not_required_for_this_script",
+    "short_term_investments": "missing",
+    "cash_and_short_term_investments": "missing",
+    "net_debt_basis": "not_required_for_this_script",
+    "special_items_notes": "not_required_for_this_script",
+    "normalized_net_income": "missing",
+    "normalized_eps": "missing",
+    "normalized_operating_income": "missing",
+    "goodwill": "missing",
+    "intangible_assets": "missing",
+    "acquisition_related_amortization": "missing",
+    "restructuring_and_integration_costs": "missing",
+    "acquisition_related_costs": "missing",
+    "acquisition_accounting_notes": "missing"
+  },
+  "downstream_impact": {
+    "minimum_ratio_run_fields": [
+      "amount_unit",
+      "basis",
+      "currency",
+      "per_share_unit",
+      "period",
+      "revenue",
+      "source",
+      "source_date",
+      "source_status"
+    ],
+    "ratio_dry_run_allowed": true,
+    "missing_minimum_fields": [],
+    "available_ratios": [
+      "gross_margin",
+      "operating_margin",
+      "operating_cash_flow_margin",
+      "free_cash_flow",
+      "fcf_margin"
+    ],
+    "unavailable_ratios": [
+      {
+        "ratio": "raw_net_margin",
+        "missing_inputs": [
+          "net_income"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "raw_roe",
+        "missing_inputs": [
+          "net_income",
+          "shareholders_equity"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "raw_roa",
+        "missing_inputs": [
+          "net_income",
+          "total_assets"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "net_debt",
+        "missing_inputs": [
+          "total_debt"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "debt_to_equity",
+        "missing_inputs": [
+          "total_debt",
+          "shareholders_equity"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "current_ratio",
+        "missing_inputs": [
+          "current_assets",
+          "current_liabilities"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "sbc_to_revenue",
+        "missing_inputs": [
+          "stock_based_compensation"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "ar_to_revenue",
+        "missing_inputs": [
+          "accounts_receivable"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "inventory_to_revenue",
+        "missing_inputs": [
+          "inventory"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      },
+      {
+        "ratio": "diluted_shares_trend",
+        "missing_inputs": [
+          "shares_diluted"
+        ],
+        "reason": "missing_or_unresolved_inputs"
+      }
+    ]
+  },
+  "source_review_batch_id": "normalized-review-exmp-05a7dc26d188",
+  "source_promotion_id": "promotion-exmp-fy2025-05a7dc26d188",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "snapshot_sha256": "05a7dc26d188d1685b905353a68cc0d3102dedf831fa7fb3e50e1a943cf4a0b1",
+  "prohibited_real_company_flag": false,
+  "no_investment_conclusion": true,
+  "csv_file": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox/normalized_financials_sandbox.csv",
+  "audit_file": "goodluck-stock-research/examples/pipeline_runs/EXMP/full/normalized_csv_sandbox/normalized_csv_audit.json",
+  "created_at": "2026-07-01T07:00:57+00:00",
+  "overwrite_used": false,
+  "labels": [
+    "fictional",
+    "sandbox",
+    "not investment data",
+    "not company fact",
+    "not for production research",
+    "not for trading"
+  ]
+}

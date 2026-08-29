@@ -1,0 +1,22 @@
+{
+  "mapping_review_schema_version": "v0.3.7",
+  "mapping_review_batch_id": "mapping-review-us-gaap-core-v037-invalid-001",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "mapping_status": "approved",
+  "created_at": "2026-06-29T00:30:00Z",
+  "reviewer_id": "fixture-mapping-reviewer",
+  "records": [
+    {
+      "mapping_review_record_id": "mapping-review-revenue-invalid-001",
+      "mapping_id": "revenue-v037",
+      "normalized_field": "revenue",
+      "reviewer_decision": "approve_mapping",
+      "review_status": "approved",
+      "evidence_notes": "",
+      "reviewer_notes": "Missing evidence should fail.",
+      "review_timestamp": "2026-06-29T00:31:00Z",
+      "relationship_reviewed": true,
+      "relationship_evidence_notes": "missing"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_name": "pipeline_policy_schema",
+  "schema_version": "v0.3.10",
+  "root_type": "object",
+  "modes": [
+    "fictional_sandbox_full",
+    "fictional_sandbox_partial",
+    "real_company_review_only",
+    "blocked_real_company_promotion_attempt"
+  ],
+  "real_company_blocked_steps": ["promotion", "normalized_csv", "v02_ratio_dry_run"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"]
+}

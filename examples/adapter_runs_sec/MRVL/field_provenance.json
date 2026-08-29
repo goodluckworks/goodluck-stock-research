@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "field_name": "raw_filing_text",
+      "value_status": "raw_snapshot_available",
+      "source_id": "mrvl-10-k-0001835632-26-000011",
+      "source_field_name": "full filing text / SEC filing document",
+      "source_locator": "goodluck-stock-research/examples/adapter_runs_sec/MRVL/raw/raw-mrvl-10-k-0001835632-26-000011-af8af9321049.htm",
+      "transformation": "official filing document downloaded or fixture copied; checksum recorded",
+      "confidence": "high",
+      "notes": "No financial field was inferred from the filing text."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "run_id": "xbrl-nvda-fy2026-c08153438a7f",
+  "unresolved_fields": [],
+  "rejected_facts": [
+    {
+      "normalized_field": "revenue",
+      "fact_id": "fact-002",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "NVDA-FY2026-DC",
+      "source_locator": "synthetic NVDA dimensional revenue",
+      "reasons": [
+        "dimension_conflict"
+      ]
+    },
+    {
+      "normalized_field": "diluted_shares",
+      "fact_id": "fact-010",
+      "concept_qname": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+      "context_id": "NVDA-FY2025",
+      "source_locator": "synthetic NVDA wrong-period shares",
+      "reasons": [
+        "wrong_period",
+        "split_basis_unverified"
+      ]
+    }
+  ],
+  "warnings": [
+    "Fixture-oriented prototype; not production iXBRL coverage.",
+    "All candidates require human review."
+  ]
+}

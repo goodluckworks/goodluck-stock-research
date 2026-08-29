@@ -1,0 +1,24 @@
+{
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "currency": "USD",
+  "amount_unit": "USD millions",
+  "per_share_unit": "USD/share",
+  "reporting_period": "TTM ended 2026-04-26",
+  "basis": "Base FCF is filing-derived TTM operating cash flow less purchases of productive assets and is treated as FCFE / levered FCF as a research approximation; no net debt subtraction is applied. TTM equals FY2026 plus Q1 FY2027 less Q1 FY2026. Diluted shares use Q1 FY2027 weighted-average diluted shares in millions. Growth, discount-rate, and terminal-growth paths are analyst test assumptions, not company guidance.",
+  "fcf_type": "FCFE",
+  "base_year_fcf": 119076,
+  "projection_years": 5,
+  "revenue_or_fcf_growth_cases": {
+    "bear": [0.10, 0.08, 0.06, 0.05, 0.04],
+    "base": [0.20, 0.15, 0.12, 0.10, 0.08],
+    "bull": [0.30, 0.25, 0.20, 0.15, 0.10]
+  },
+  "discount_rates": [0.10, 0.12, 0.14, 0.16],
+  "terminal_growth_rates": [0.02, 0.025, 0.03],
+  "net_debt": -4767,
+  "diluted_shares": 24391,
+  "source": "NVIDIA FY2026 Form 10-K and Q1 FY2027 Form 10-Q for base inputs; scenario assumptions prepared solely for Phase 2 regression testing",
+  "source_date": "2026-06-24",
+  "source_status": "partially_verified"
+}

@@ -1,0 +1,66 @@
+{
+  "quality_schema_version": "v0.3.7",
+  "quality_package_id": "review-quality-mrvl-29b488050b1b",
+  "extraction_run_id": "xbrl-mrvl-fy2026-29b488050b1b",
+  "snapshot_sha256": "29b488050b1b47b4734ba9723aa03a53e5b3163e4c73fbd97a0f0128be18491e",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "company": "Marvell Technology, Inc.",
+  "ticker": "MRVL",
+  "fictional_company": false,
+  "created_at": "2026-06-29T09:23:05+00:00",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_real_excerpt_drills/MRVL/extraction/extraction_candidates.json",
+  "provenance_file": "goodluck-stock-research/examples/xbrl_real_excerpt_drills/MRVL/extraction/field_provenance.json",
+  "records": [
+    {
+      "candidate_id": "mrvl-operating_income-candidate-001",
+      "normalized_field": "operating_income",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "mrvl-operating_cash_flow-candidate-001",
+      "normalized_field": "operating_cash_flow",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 100.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "high",
+      "relationship_review_status": "reviewed"
+    },
+    {
+      "candidate_id": "mrvl-capital_expenditure-candidate-001",
+      "normalized_field": "capital_expenditure",
+      "completeness_score": 100.0,
+      "provenance_score": 100.0,
+      "relationship_score": 85.0,
+      "ambiguity_score": 85.0,
+      "approval_readiness": "needs_review",
+      "blocking_issues": [],
+      "warning_flags": [
+        "source_sign_preserved_in_source_value",
+        "synthetic_real_company_fixture_unverified"
+      ],
+      "relationship_confidence": "medium",
+      "relationship_review_status": "reviewed"
+    }
+  ],
+  "boundary": [
+    "Scores are advisory only.",
+    "Scores do not approve fields.",
+    "Real-company-shaped fixtures remain unapproved and unpromoted."
+  ]
+}

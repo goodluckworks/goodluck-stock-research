@@ -1,0 +1,13 @@
+{
+  "schema_name": "field_provenance_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "required": ["run_id", "snapshot_sha256", "mapping_version", "records"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "run_id": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "records": {"type": "array", "items": {"type": "object", "required": ["record_id", "candidate_id", "normalized_field", "snapshot_sha256", "mapping_version", "source_fact_ids", "source_locator", "concept_qname", "context_id", "period", "unit", "transformation", "confidence", "review_status"]}}
+  }
+}

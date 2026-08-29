@@ -1,0 +1,43 @@
+{
+  "schema_name": "extraction_candidate_schema",
+  "schema_version": "v0.3.5",
+  "root_type": "object",
+  "required": ["run_id", "mapping_version", "snapshot_sha256", "review_status", "candidates"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+  "properties": {
+    "run_id": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "review_status": {"type": "string", "enum": ["draft_extracted_unreviewed"]},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "normalized_field", "extracted_value", "source_value", "unit", "period", "concept_qname", "context_id", "period_type", "dimensions", "source_locator", "source_fact_ids", "transformation", "confidence", "warning_flags", "competing_candidate_ids", "review_status", "taxonomy_relationship", "review_checklist"],
+        "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status"],
+        "properties": {
+          "candidate_id": {"type": "string", "nonblank": true},
+          "normalized_field": {"type": "string", "enum": ["revenue", "gross_profit", "operating_income", "net_income", "operating_cash_flow", "capital_expenditure", "cash_and_equivalents", "total_debt", "diluted_shares"]},
+          "extracted_value": {"type": "number", "finite": true},
+          "source_value": {"type": ["string", "array"]},
+          "unit": {"type": "string", "nonblank": true},
+          "source_unit": {"type": "string", "nonblank": true},
+          "period": {"type": "string", "nonblank": true},
+          "concept_qname": {"type": "string", "nonblank": true},
+          "context_id": {"type": "string", "nonblank": true},
+          "period_type": {"type": "string", "enum": ["duration", "instant"]},
+          "dimensions": {"type": "array"},
+          "source_locator": {"type": "string", "nonblank": true},
+          "source_fact_ids": {"type": "array"},
+          "transformation": {"type": "string", "nonblank": true},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "warning_flags": {"type": "array"},
+          "competing_candidate_ids": {"type": "array"},
+          "review_status": {"type": "string", "enum": ["draft_extracted_unreviewed"]},
+          "taxonomy_relationship": {"type": "object"},
+          "review_checklist": {"type": "object"}
+        }
+      }
+    }
+  }
+}

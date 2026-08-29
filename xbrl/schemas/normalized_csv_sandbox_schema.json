@@ -1,0 +1,31 @@
+{
+  "schema_name": "normalized_csv_sandbox_schema",
+  "schema_version": "v0.3.8",
+  "root_type": "object",
+  "required": ["csv_schema_version", "company", "ticker", "fixture_data_status", "sandbox_status", "period", "currency", "amount_unit", "per_share_unit", "populated_fields", "omitted_fields", "unresolved_fields", "blocked_fields", "downstream_impact", "source_review_batch_id", "source_promotion_id", "mapping_version", "snapshot_sha256", "prohibited_real_company_flag", "no_investment_conclusion", "csv_file", "audit_file"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"],
+  "properties": {
+    "csv_schema_version": {"type": "string", "nonblank": true},
+    "company": {"type": "string", "nonblank": true},
+    "ticker": {"type": "string", "enum": ["EXMP"]},
+    "fixture_data_status": {"type": "string", "enum": ["fictional_sample"]},
+    "sandbox_status": {"type": "string", "enum": ["fictional_sandbox_not_investment_data"]},
+    "period": {"type": "string", "nonblank": true},
+    "currency": {"type": "string", "nonblank": true},
+    "amount_unit": {"type": "string", "nonblank": true},
+    "per_share_unit": {"type": "string", "nonblank": true},
+    "populated_fields": {"type": "array"},
+    "omitted_fields": {"type": "array"},
+    "unresolved_fields": {"type": "array"},
+    "blocked_fields": {"type": "array"},
+    "downstream_impact": {"type": "object"},
+    "source_review_batch_id": {"type": "string", "nonblank": true},
+    "source_promotion_id": {"type": "string", "nonblank": true},
+    "mapping_version": {"type": "string", "nonblank": true},
+    "snapshot_sha256": {"type": "string", "nonblank": true},
+    "prohibited_real_company_flag": {"type": "boolean"},
+    "no_investment_conclusion": {"type": "boolean"},
+    "csv_file": {"type": "string", "nonblank": true},
+    "audit_file": {"type": "string", "nonblank": true}
+  }
+}

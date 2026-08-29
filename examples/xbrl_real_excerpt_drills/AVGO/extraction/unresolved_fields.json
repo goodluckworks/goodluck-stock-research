@@ -1,0 +1,105 @@
+{
+  "run_id": "xbrl-avgo-fy2025-1f3d337d3708",
+  "unresolved_fields": [
+    {
+      "normalized_field": "gross_profit",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "operating_income",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "net_income",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "operating_cash_flow",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "capital_expenditure",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "cash_and_equivalents",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "total_debt",
+      "reason_code": "debt_double_count_risk",
+      "reason": "A total-debt fact and debt components coexist; the prototype will not combine or choose between them.",
+      "source_fact_ids": [
+        "fact-003",
+        "fact-004",
+        "fact-005"
+      ],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    },
+    {
+      "normalized_field": "diluted_shares",
+      "reason_code": "missing_field",
+      "reason": "No mapped fact was present.",
+      "source_fact_ids": [],
+      "rejected_facts": [],
+      "competing_candidate_ids": [],
+      "review_required": true,
+      "suggested_action": "Review fixture facts, mapping and context manually."
+    }
+  ],
+  "rejected_facts": [
+    {
+      "normalized_field": "revenue",
+      "fact_id": "fact-001",
+      "concept_qname": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context_id": "AVGO-FY2025-SOFTWARE",
+      "source_locator": "excerpt segment software revenue line",
+      "reasons": [
+        "dimension_conflict"
+      ]
+    }
+  ],
+  "warnings": [
+    "Fixture-oriented prototype; not production iXBRL coverage.",
+    "All candidates require human review."
+  ]
+}

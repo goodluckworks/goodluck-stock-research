@@ -1,0 +1,18 @@
+{
+  "decision_log_id": "decision-log-avgo-7dc8a9c4d00a",
+  "created_at": "2026-06-29T09:22:19+00:00",
+  "source_decision_file": "goodluck-stock-research/examples/xbrl_review_workbenches/AVGO/review_decision_template.json",
+  "quality_score_file": "goodluck-stock-research/examples/xbrl_review_quality/AVGO/review_quality_score.json",
+  "quality_score_reference": "review-quality-avgo-7dc8a9c4d00a",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/AVGO/extraction_candidates.json",
+  "manifest_file": "goodluck-stock-research/examples/xbrl_extraction_runs/AVGO/extraction_run_manifest.json",
+  "review_batch_id": "normalized-review-avgo-7dc8a9c4d00a",
+  "extraction_run_id": "xbrl-avgo-fy2025-7dc8a9c4d00a",
+  "snapshot_sha256": "7dc8a9c4d00afce413507447e50bf457f5ece27e71a8c15a2afb18f27daf2df3",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "ticker": "AVGO",
+  "decision_counts": {
+    "unresolved": 8
+  },
+  "overwrite_used": true
+}

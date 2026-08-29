@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Offline Packet QA Result",
+  "type": "object",
+  "required": [
+    "qa_schema_version",
+    "created_at",
+    "passed",
+    "checks"
+  ],
+  "properties": {
+    "qa_schema_version": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "passed": {
+      "type": "boolean"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check", "passed", "notes"],
+        "properties": {
+          "check": {"type": "string"},
+          "passed": {"type": "boolean"},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "forbidden_fields": [
+    "target_price",
+    "recommendation",
+    "buy",
+    "sell",
+    "hold",
+    "position_size",
+    "research_status",
+    "trading_action"
+  ]
+}

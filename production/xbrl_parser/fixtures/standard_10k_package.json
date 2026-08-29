@@ -1,0 +1,17 @@
+{
+  "ticker": "MRVL",
+  "form": "10-K",
+  "issuer_type": "operating_company",
+  "fiscal_period": "FY2026",
+  "facts": [
+    {"field": "revenue", "value": 1000, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:Revenue", "source_locator": "fixture#revenue"},
+    {"field": "gross_profit", "value": 600, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:GrossProfit", "source_locator": "fixture#gross"},
+    {"field": "operating_income", "value": 200, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:OperatingIncomeLoss", "source_locator": "fixture#opinc"},
+    {"field": "net_income", "value": 150, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:NetIncomeLoss", "source_locator": "fixture#net"},
+    {"field": "operating_cash_flow", "value": 250, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:NetCashProvidedByUsedInOperatingActivities", "source_locator": "fixture#ocf"},
+    {"field": "capital_expenditure", "value": 50, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment", "source_locator": "fixture#capex"},
+    {"field": "cash_and_equivalents", "value": 300, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:CashAndCashEquivalentsAtCarryingValue", "source_locator": "fixture#cash"},
+    {"field": "total_debt", "value": 400, "unit": "USD", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:Debt", "source_locator": "fixture#debt"},
+    {"field": "diluted_shares", "value": 100, "unit": "shares", "period": "FY2026", "entity": "MRVL", "dimensions": [], "concept_qname": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding", "source_locator": "fixture#shares"}
+  ]
+}

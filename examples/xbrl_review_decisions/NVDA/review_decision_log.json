@@ -1,0 +1,18 @@
+{
+  "decision_log_id": "decision-log-nvda-c08153438a7f",
+  "created_at": "2026-06-29T09:22:19+00:00",
+  "source_decision_file": "goodluck-stock-research/examples/xbrl_review_workbenches/NVDA/review_decision_template.json",
+  "quality_score_file": "goodluck-stock-research/examples/xbrl_review_quality/NVDA/review_quality_score.json",
+  "quality_score_reference": "review-quality-nvda-c08153438a7f",
+  "candidate_file": "goodluck-stock-research/examples/xbrl_extraction_runs/NVDA/extraction_candidates.json",
+  "manifest_file": "goodluck-stock-research/examples/xbrl_extraction_runs/NVDA/extraction_run_manifest.json",
+  "review_batch_id": "normalized-review-nvda-c08153438a7f",
+  "extraction_run_id": "xbrl-nvda-fy2026-c08153438a7f",
+  "snapshot_sha256": "c08153438a7f3a97d4f34b0f6fa3136d8fd7be0fc1fbf84ddd0f3173e96c5834",
+  "mapping_version": "us-gaap-core-v0.3.7-fixture-1",
+  "ticker": "NVDA",
+  "decision_counts": {
+    "unresolved": 9
+  },
+  "overwrite_used": true
+}

@@ -1,0 +1,18 @@
+{
+  "schema_name": "v02_dry_run_manifest_schema",
+  "schema_version": "v0.3.8",
+  "root_type": "object",
+  "required": ["dry_run_id", "input_csv", "input_manifest", "output_markdown", "script", "run_status", "sandbox_status", "no_investment_conclusion", "created_at"],
+  "forbidden_fields": ["target_price", "recommendation", "buy", "sell", "hold", "position_size", "research_status", "trading_action"],
+  "properties": {
+    "dry_run_id": {"type": "string", "nonblank": true},
+    "input_csv": {"type": "string", "nonblank": true},
+    "input_manifest": {"type": "string", "nonblank": true},
+    "output_markdown": {"type": "string", "nonblank": true},
+    "script": {"type": "string", "enum": ["ratio_calculator.py"]},
+    "run_status": {"type": "string", "enum": ["passed"]},
+    "sandbox_status": {"type": "string", "enum": ["fictional_sandbox_not_investment_data"]},
+    "no_investment_conclusion": {"type": "boolean"},
+    "created_at": {"type": "string", "nonblank": true}
+  }
+}
